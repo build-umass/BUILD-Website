@@ -1,0 +1,8 @@
+{
+  "rules": {
+    "applications": {
+      ".read": true,
+      ".write": true
+    }
+  }
+}
