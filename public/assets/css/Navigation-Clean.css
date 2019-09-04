@@ -81,10 +81,6 @@
   color: inherit;
 }
 
-[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
-  border-color: #fff !important;
-}
-
 .gradient1 {
   background: -webkit-linear-gradient(0deg, #A30000, #F44708);
   -webkit-background-clip: text;
