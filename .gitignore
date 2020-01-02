@@ -65,6 +65,6 @@ node_modules/
 .env
 
 # Member Img
-people/
+# people/
 
 .DS_Store
