@@ -1,28 +1,69 @@
+// Imports
 import React from "react";
+
 import Navbar from "../components/Navbar";
-import IndexJumbotron from "../components/IndexJumbotron";
+import Footer from "../components/Footer";
+
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Link from "react-bootstrap/NavLink";
+import Button from "react-bootstrap/Button";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { faBook } from "@fortawesome/free-solid-svg-icons";
+import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
 
+// Render
 export default function Index() {
     return (
         <div>
-            {/* Nav + Landing Jumbotron */}
             <div className="sq-bg">
+				{/* Navbar */}
                 <Navbar />
-                <IndexJumbotron />
+				{/* Landing Jumbotron */}
+                <Container className="pg-jumbotron center">
+                    <Row className="padding1">
+                        <Col>
+                            <div>
+                                <Row>
+                                    <Col>
+                                        <h1 className="pg-heading center">
+                                            Building a better world with
+                                            technology
+                                        </h1>
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col>
+                                        <p className="pg-heading center primary-font">
+                                            We are a group of students committed
+                                            to provide non-profits, startups and
+                                            local businesses with scalable
+                                            technological soultion through
+                                            pro-bono consulting engagements.
+                                        </p>
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col className="center">
+                                        <Button>Get in touch!</Button>
+                                    </Col>
+                                </Row>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
             </div>
             <div>
                 <Container>
                     {/* About */}
-                    <div>
+                    <div className="margin1">
                         <Row>
-                            <Col>
+                            <Col sm={8}>
                                 <div>
                                     <Row>
                                         <Col>
@@ -31,7 +72,7 @@ export default function Index() {
                                     </Row>
                                     <Row>
                                         <Col>
-                                            <p>
+                                            <p className="desc">
                                                 BUILD strives to make technology
                                                 easy to use and convenient for
                                                 those who create communities and
@@ -55,14 +96,16 @@ export default function Index() {
                                 </div>
                             </Col>
                             <Col>
-                                <img></img>
+                                <div className="center">
+                                    <img src="/img/illustrations/about.svg" />
+                                </div>
                             </Col>
                         </Row>
                     </div>
                     {/* Our Work */}
-                    <div>
+                    <div className="margin2">
                         <Row>
-                            <Col>
+                            <Col sm={8}>
                                 <div>
                                     <Row>
                                         <Col>
@@ -71,7 +114,7 @@ export default function Index() {
                                     </Row>
                                     <Row>
                                         <Col>
-                                            <p>
+                                            <p className="desc">
                                                 Each semester, our teams work
                                                 with various organizations and
                                                 build cutting-edge solutions for
@@ -98,81 +141,127 @@ export default function Index() {
                                 </div>
                             </Col>
                             <Col>
-                                <img></img>
+                                <div className="center">
+                                    <img src="/img/illustrations/services.svg" />
+                                </div>
                             </Col>
                         </Row>
                     </div>
                 </Container>
             </div>
             {/* Some Fun Facts */}
-            <div>
-                <div></div>
-                <div>
-                    <Container>
+            <div className="diagonal">
+                <div className="diagonal-contents center">
+                    <Container className="padding2">
                         <Row>
-                            <Col></Col>
+                            <Col>
+                                <h1 className="stats-title">Some fun facts</h1>
+                            </Col>
                         </Row>
                         <Row>
                             <Col>
                                 <div>
                                     <Row>
-                                        <Col></Col>
+                                        <Col>
+                                            <FontAwesomeIcon
+                                                icon={faUser}
+                                                className="stats-icon"
+                                            />
+                                        </Col>
                                     </Row>
                                     <Row>
-                                        <Col>21</Col>
+                                        <Col>
+                                            <p className="stats-number">35+</p>
+                                        </Col>
                                     </Row>
                                     <Row>
-                                        <Col>Students</Col>
-                                    </Row>
-                                </div>
-                            </Col>
-                            <Col>
-                                <div>
-                                    <Row>
-                                        <Col></Col>
-                                    </Row>
-                                    <Row>
-                                        <Col>8+</Col>
-                                    </Row>
-                                    <Row>
-                                        <Col>Majors</Col>
+                                        <Col>
+                                            <p className="stats-base">
+                                                Students
+                                            </p>
+                                        </Col>
                                     </Row>
                                 </div>
                             </Col>
                             <Col>
                                 <div>
                                     <Row>
-                                        <Col></Col>
+                                        <Col>
+                                            <FontAwesomeIcon
+                                                icon={faBook}
+                                                className="stats-icon"
+                                            />
+                                        </Col>
                                     </Row>
                                     <Row>
-                                        <Col>3</Col>
+                                        <Col>
+                                            <p className="stats-number">6+</p>
+                                        </Col>
                                     </Row>
                                     <Row>
-                                        <Col>Projects</Col>
+                                        <Col>
+                                            <p className="stats-base">Majors</p>
+                                        </Col>
                                     </Row>
                                 </div>
                             </Col>
                             <Col>
                                 <div>
                                     <Row>
-                                        <Col></Col>
+                                        <Col>
+                                            <FontAwesomeIcon
+                                                icon={faLaptopCode}
+                                                className="stats-icon"
+                                            />
+                                        </Col>
                                     </Row>
                                     <Row>
-                                        <Col>10,000+</Col>
+                                        <Col>
+                                            <p className="stats-number">8</p>
+                                        </Col>
                                     </Row>
                                     <Row>
-                                        <Col>Lines of Code</Col>
+                                        <Col>
+                                            <p className="stats-base">
+                                                Projects
+                                            </p>
+                                        </Col>
+                                    </Row>
+                                </div>
+                            </Col>
+                            <Col>
+                                <div>
+                                    <Row>
+                                        <Col>
+                                            <FontAwesomeIcon
+                                                icon={faCode}
+                                                className="stats-icon"
+                                            />
+                                        </Col>
+                                    </Row>
+                                    <Row>
+                                        <Col>
+                                            <p className="stats-number">
+                                                10,000+
+                                            </p>
+                                        </Col>
+                                    </Row>
+                                    <Row>
+                                        <Col>
+                                            <p className="stats-base">
+                                                Lines of Code
+                                            </p>
+                                        </Col>
                                     </Row>
                                 </div>
                             </Col>
                         </Row>
                     </Container>
                 </div>
-                <div></div>
             </div>
             <Container>
                 {/* Get Involved */}
-                <div>
+                <div className="margin1">
                     <Row>
                         <Col>
                             <h1>Get Involved</h1>
@@ -180,7 +269,7 @@ export default function Index() {
                     </Row>
                     <Row>
                         <Col>
-                            <p>
+                            <p className="desc">
                                 BUILD is a fantastic way to apply your knowledge
                                 gained from class to impact lives. We work in
                                 small teams to build technological solutions for
@@ -202,7 +291,7 @@ export default function Index() {
                     </Row>
                 </div>
                 {/* Where we go */}
-                <div>
+                <div className="margin2">
                     <Row>
                         <Col>
                             <h1>Where we go</h1>
@@ -210,7 +299,7 @@ export default function Index() {
                     </Row>
                     <Row>
                         <Col>
-                            <p>
+                            <p className="desc">
                                 Our members are brilliant students and
                                 professionals and often end up working for the
                                 best companies in the industry.
@@ -218,10 +307,47 @@ export default function Index() {
                         </Col>
                     </Row>
                     <Row>
-                        <Col>{/* Map over logos */}</Col>
+                        {/* Map over logos */}
+                        <Col md={4} className="center space">
+                            <img src="img/logo/msft.svg" />
+                        </Col>
+                        <Col md={4} className="center space">
+                            <img src="img/logo/fb.svg" />
+                        </Col>
+                        <Col md={4} className="center space">
+                            <img src="img/logo/goog.svg" />
+                        </Col>
+                        <Col md={4} className="center space">
+                            <img src="img/logo/Amazon_logo.svg" />
+                        </Col>
+                        <Col md={4} className="center space">
+                            <img src="img/logo/uber.svg" className="logo" />
+                        </Col>
+                        <Col md={4} className="center space">
+                            <img src="img/logo/cisco.svg" className="logo" />
+                        </Col>
+                        <Col md={4} className="center space">
+                            <img src="img/logo/mastercard.svg" />
+                        </Col>
+                        <Col md={4} className="center space">
+                            <img src="img/logo/visa.png" className="logo" />
+                        </Col>
+                        <Col md={4} className="center space">
+                            <img src="img/logo/fidelity.svg" />
+                        </Col>
+                        <Col md={4} className="center space ">
+                            <img src="img/logo/pratt-whitney.svg" />
+                        </Col>
+                        <Col md={4} className="center space">
+                            <img src="img/logo/dell.png" className="logo" />
+                        </Col>
+                        <Col md={4} className="center space">
+                            <img src="img/logo/massmutual.svg" />
+                        </Col>
                     </Row>
                 </div>
             </Container>
+            <Footer />
         </div>
     );
 }

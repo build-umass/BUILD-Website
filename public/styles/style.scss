@@ -23,7 +23,6 @@ h6 {
     font-weight: 700;
     color: $primary-color;
 }
-
 .navbar {
     padding: 20px;
 }
@@ -39,8 +38,8 @@ h6 {
 }
 
 .nav-link {
-	margin-left: 8px;
-	margin-right: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
     &:hover {
         text-decoration: underline;
     }
@@ -66,11 +65,64 @@ h6 {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
 }
 
+.footer {
+    background: $red-gradient;
+    color: white;
+
+    .nav-link {
+        font-size: 14px;
+        font-family: $primary-font;
+        font-weight: 400;
+        color: rgba($color: white, $alpha: 0.7) !important;
+        margin: 0px;
+        padding: 0px;
+        text-decoration: none !important;
+
+        .footer-heading {
+            color: rgba($color: white, $alpha: 1) !important;
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+    }
+}
+
+.copyright {
+    font-size: 14px;
+    font-family: $primary-font;
+    font-weight: 400;
+    color: rgba($color: white, $alpha: 0.7) !important;
+    margin: 0px;
+    padding: 0px;
+}
+
 .center {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.center-top {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.top {
+	padding-top: 18px;
+}
+
+.bottom {
+	padding-top: 1em;
+}
+
+.lineskip {
+    padding-bottom: 10px;
+}
+
+img {
+    max-width: 90%;
 }
 
 .primary-font {
@@ -82,13 +134,38 @@ h6 {
     padding-bottom: 40px;
 }
 
+.padding2 {
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
+.padding3 {
+    padding-top: 2.5em;
+    padding-bottom: 2em;
+}
+
+.margin1 {
+    margin-top: 7em;
+    margin-bottom: 5em;
+}
+
+.margin2 {
+    margin-top: 7em;
+    margin-bottom: 8em;
+}
+
+.desc {
+    font-size: 22px;
+}
+
 .inline-link {
     color: $primary-color !important;
     font-size: 22px;
     font-family: $secondary-font;
     font-weight: 700;
-	padding: 0px;
-	margin: 0px;
+    padding: 0px;
+    margin-left: 0px;
+    margin-bottom: 12px;
 }
 
 .fa-chevron-right {
@@ -107,4 +184,67 @@ h6 {
 
 .pg-jumbotron {
     min-height: 50vh;
+}
+
+.diagonal {
+    width: 100%;
+    background-color: $red-gradient;
+    background: $red-gradient;
+    color: white;
+    transform: rotate(2deg) skew(2deg);
+    -webkit-transform: rotate(2deg) skew(2deg);
+    -moz-transform: rotate(2deg) skew(2deg);
+    -o-transform: rotate(2deg) skew(2deg);
+    -ms-transform: rotate(2deg) skew(2deg);
+
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.diagonal-contents {
+    color: #fff;
+    padding: 35px 0 15px;
+    transform: rotate(-2deg) skew(-2deg);
+    -webkit-transform: rotate(-2deg) skew(-2deg);
+    -moz-transform: rotate(-2deg) skew(-2deg);
+    -o-transform: rotate(-2deg) skew(-2deg);
+    -ms-transform: rotate(-2deg) skew(-2deg);
+    margin-bottom: -20px;
+    padding-bottom: 50px;
+}
+
+.stats-title {
+    color: white !important;
+    margin-bottom: 1em;
+}
+
+.stats-number {
+    font-size: 3.5rem;
+    line-height: 3.25rem;
+    font-weight: 300 !important;
+    font-family: $primary-font;
+    color: white;
+    margin-bottom: 0px;
+}
+
+.stats-base {
+    font-size: 30px;
+    font-weight: 500;
+    font-family: $primary-font;
+    color: white;
+}
+
+.stats-icon {
+    font-size: 3rem;
+    margin-bottom: 22px;
+    font-weight: 500;
+}
+
+.logo {
+	width: 70% !important;
+}
+
+.space {
+	padding: 12px;
+	margin-bottom: 12px;
 }
