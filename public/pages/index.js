@@ -1,203 +1,227 @@
-import Head from 'next/head'
+import React from "react";
+import Navbar from "../components/Navbar";
+import IndexJumbotron from "../components/IndexJumbotron";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Link from "react-bootstrap/NavLink";
 
-const Home = () => (
-  <div className="container">
-    <Head>
-      <title>Create Next App</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
-    <main>
-      <h1 className="title">
-        Welcome to <a href="https://nextjs.org">Next.js!</a>
-      </h1>
-
-      <p className="description">
-        Get started by editing <code>pages/index.js</code>
-      </p>
-
-      <div className="grid">
-        <a href="https://nextjs.org/docs" className="card">
-          <h3>Documentation &rarr;</h3>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a href="https://nextjs.org/learn" className="card">
-          <h3>Learn &rarr;</h3>
-          <p>Learn about Next.js in an interactive course with quizzes!</p>
-        </a>
-
-        <a
-          href="https://github.com/zeit/next.js/tree/master/examples"
-          className="card"
-        >
-          <h3>Examples &rarr;</h3>
-          <p>Discover and deploy boilerplate example Next.js projects.</p>
-        </a>
-
-        <a
-          href="https://zeit.co/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          className="card"
-        >
-          <h3>Deploy &rarr;</h3>
-          <p>
-            Instantly deploy your Next.js site to a public URL with ZEIT Now.
-          </p>
-        </a>
-      </div>
-    </main>
-
-    <footer>
-      <a
-        href="https://zeit.co?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Powered by <img src="/zeit.svg" alt="ZEIT Logo" />
-      </a>
-    </footer>
-
-    <style jsx>{`
-      .container {
-        min-height: 100vh;
-        padding: 0 0.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
-      main {
-        padding: 5rem 0;
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
-      footer {
-        width: 100%;
-        height: 100px;
-        border-top: 1px solid #eaeaea;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      footer img {
-        margin-left: 0.5rem;
-      }
-
-      footer a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
-
-      .title a {
-        color: #0070f3;
-        text-decoration: none;
-      }
-
-      .title a:hover,
-      .title a:focus,
-      .title a:active {
-        text-decoration: underline;
-      }
-
-      .title {
-        margin: 0;
-        line-height: 1.15;
-        font-size: 4rem;
-      }
-
-      .title,
-      .description {
-        text-align: center;
-      }
-
-      .description {
-        line-height: 1.5;
-        font-size: 1.5rem;
-      }
-
-      code {
-        background: #fafafa;
-        border-radius: 5px;
-        padding: 0.75rem;
-        font-size: 1.1rem;
-        font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-          DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-      }
-
-      .grid {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-
-        max-width: 800px;
-        margin-top: 3rem;
-      }
-
-      .card {
-        margin: 1rem;
-        flex-basis: 45%;
-        padding: 1.5rem;
-        text-align: left;
-        color: inherit;
-        text-decoration: none;
-        border: 1px solid #eaeaea;
-        border-radius: 10px;
-        transition: color 0.15s ease, border-color 0.15s ease;
-      }
-
-      .card:hover,
-      .card:focus,
-      .card:active {
-        color: #0070f3;
-        border-color: #0070f3;
-      }
-
-      .card h3 {
-        margin: 0 0 1rem 0;
-        font-size: 1.5rem;
-      }
-
-      .card p {
-        margin: 0;
-        font-size: 1.25rem;
-        line-height: 1.5;
-      }
-
-      @media (max-width: 600px) {
-        .grid {
-          width: 100%;
-          flex-direction: column;
-        }
-      }
-    `}</style>
-
-    <style jsx global>{`
-      html,
-      body {
-        padding: 0;
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-          Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-    `}</style>
-  </div>
-)
-
-export default Home
+export default function Index() {
+    return (
+        <div>
+            {/* Nav + Landing Jumbotron */}
+            <div className="sq-bg">
+                <Navbar />
+                <IndexJumbotron />
+            </div>
+            <div>
+                <Container>
+                    {/* About */}
+                    <div>
+                        <Row>
+                            <Col>
+                                <div>
+                                    <Row>
+                                        <Col>
+                                            <h1>About Us</h1>
+                                        </Col>
+                                    </Row>
+                                    <Row>
+                                        <Col>
+                                            <p>
+                                                BUILD strives to make technology
+                                                easy to use and convenient for
+                                                those who create communities and
+                                                promote public welfare.
+                                            </p>
+                                        </Col>
+                                    </Row>
+                                    <Row>
+                                        <Col>
+                                            <Link
+                                                className="inline-link"
+                                                href="/about"
+                                            >
+                                                Learn more{" "}
+                                                <FontAwesomeIcon
+                                                    icon={faChevronRight}
+                                                />
+                                            </Link>
+                                        </Col>
+                                    </Row>
+                                </div>
+                            </Col>
+                            <Col>
+                                <img></img>
+                            </Col>
+                        </Row>
+                    </div>
+                    {/* Our Work */}
+                    <div>
+                        <Row>
+                            <Col>
+                                <div>
+                                    <Row>
+                                        <Col>
+                                            <h1>Our Work</h1>
+                                        </Col>
+                                    </Row>
+                                    <Row>
+                                        <Col>
+                                            <p>
+                                                Each semester, our teams work
+                                                with various organizations and
+                                                build cutting-edge solutions for
+                                                a vast array of problems. The
+                                                projects we focus on can range
+                                                from Full-Stack Web Development
+                                                to Software Development.
+                                            </p>
+                                        </Col>
+                                    </Row>
+                                    <Row>
+                                        <Col>
+                                            <Link
+                                                className="inline-link"
+                                                href="/services"
+                                            >
+                                                Learn more{" "}
+                                                <FontAwesomeIcon
+                                                    icon={faChevronRight}
+                                                />
+                                            </Link>
+                                        </Col>
+                                    </Row>
+                                </div>
+                            </Col>
+                            <Col>
+                                <img></img>
+                            </Col>
+                        </Row>
+                    </div>
+                </Container>
+            </div>
+            {/* Some Fun Facts */}
+            <div>
+                <div></div>
+                <div>
+                    <Container>
+                        <Row>
+                            <Col></Col>
+                        </Row>
+                        <Row>
+                            <Col>
+                                <div>
+                                    <Row>
+                                        <Col></Col>
+                                    </Row>
+                                    <Row>
+                                        <Col>21</Col>
+                                    </Row>
+                                    <Row>
+                                        <Col>Students</Col>
+                                    </Row>
+                                </div>
+                            </Col>
+                            <Col>
+                                <div>
+                                    <Row>
+                                        <Col></Col>
+                                    </Row>
+                                    <Row>
+                                        <Col>8+</Col>
+                                    </Row>
+                                    <Row>
+                                        <Col>Majors</Col>
+                                    </Row>
+                                </div>
+                            </Col>
+                            <Col>
+                                <div>
+                                    <Row>
+                                        <Col></Col>
+                                    </Row>
+                                    <Row>
+                                        <Col>3</Col>
+                                    </Row>
+                                    <Row>
+                                        <Col>Projects</Col>
+                                    </Row>
+                                </div>
+                            </Col>
+                            <Col>
+                                <div>
+                                    <Row>
+                                        <Col></Col>
+                                    </Row>
+                                    <Row>
+                                        <Col>10,000+</Col>
+                                    </Row>
+                                    <Row>
+                                        <Col>Lines of Code</Col>
+                                    </Row>
+                                </div>
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
+                <div></div>
+            </div>
+            <Container>
+                {/* Get Involved */}
+                <div>
+                    <Row>
+                        <Col>
+                            <h1>Get Involved</h1>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                            <p>
+                                BUILD is a fantastic way to apply your knowledge
+                                gained from class to impact lives. We work in
+                                small teams to build technological solutions for
+                                nonprofits and local businesses. We are looking
+                                forward to the growth of BUILD as more people
+                                get involved. We have applications for business
+                                and project developers at the beginning of each
+                                semester.
+                            </p>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                            <Link className="inline-link" href="/apply">
+                                Learn more{" "}
+                                <FontAwesomeIcon icon={faChevronRight} />
+                            </Link>
+                        </Col>
+                    </Row>
+                </div>
+                {/* Where we go */}
+                <div>
+                    <Row>
+                        <Col>
+                            <h1>Where we go</h1>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                            <p>
+                                Our members are brilliant students and
+                                professionals and often end up working for the
+                                best companies in the industry.
+                            </p>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>{/* Map over logos */}</Col>
+                    </Row>
+                </div>
+            </Container>
+        </div>
+    );
+}

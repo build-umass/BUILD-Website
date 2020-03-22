@@ -1,0 +1,110 @@
+// Imports
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Source+Sans+Pro:400,700&display=swap");
+
+// Variables
+$primary-font: "Montserrat", sans-serif;
+$secondary-font: "Source Sans Pro", sans-serif;
+$primary-color: #c82104;
+$base-color: #000000;
+$red-gradient: linear-gradient(to right, #a30000, #f44708);
+
+body {
+    font-family: $secondary-font;
+    color: $base-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $primary-font;
+    font-weight: 700;
+    color: $primary-color;
+}
+
+.navbar {
+    padding: 20px;
+}
+
+.navbar-brand,
+.nav-link {
+    font-family: $primary-font;
+    color: white !important;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.nav-link {
+	margin-left: 8px;
+	margin-right: 8px;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.btn {
+    background-color: white;
+    font-family: $primary-font;
+    color: $base-color;
+    border: none;
+    &:hover {
+        background-color: white;
+        color: $base-color;
+        border: none;
+    }
+}
+
+.navbar-toggler {
+    border-color: white !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.primary-font {
+    font-family: $primary-font;
+}
+
+.padding1 {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.inline-link {
+    color: $primary-color !important;
+    font-size: 22px;
+    font-family: $secondary-font;
+    font-weight: 700;
+	padding: 0px;
+	margin: 0px;
+}
+
+.fa-chevron-right {
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+.sq-bg {
+    background: url("../public/img/square-pattern.svg");
+    background-size: cover;
+}
+
+.pg-heading {
+    color: white;
+}
+
+.pg-jumbotron {
+    min-height: 50vh;
+}
