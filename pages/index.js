@@ -32,19 +32,17 @@ export default function Index() {
 								<Row>
 									<Col>
 										<h1 className="pg-heading center">
-											Building a better world with
-											technology
+											Building a better world with technology
 										</h1>
 									</Col>
 								</Row>
 								<Row>
 									<Col>
 										<p className="pg-heading center">
-											We are a group of students committed
-											to provide non-profits, startups and
-											local businesses with scalable
-											technological soultion through
-											pro-bono consulting engagements.
+											We are a group of students committed to provide
+											non-profits, startups and local businesses with scalable
+											technological soultion through pro-bono consulting
+											engagements.
 										</p>
 									</Col>
 								</Row>
@@ -53,9 +51,7 @@ export default function Index() {
 										<Button
 											className="btn-light"
 											onClick={() => {
-												window.open(
-													"https://forms.gle/wpjcYdzbnqvfFm7H7"
-												);
+												window.open("https://forms.gle/wpjcYdzbnqvfFm7H7");
 											}}
 										>
 											Get in touch!
@@ -82,23 +78,16 @@ export default function Index() {
 									<Row>
 										<Col>
 											<p className="desc">
-												BUILD strives to make technology
-												easy to use and convenient for
-												those who create communities and
+												BUILD strives to make technology easy to use and
+												convenient for those who create communities and
 												promote public welfare.
 											</p>
 										</Col>
 									</Row>
 									<Row>
 										<Col>
-											<Link
-												className="inline-link"
-												href="/about"
-											>
-												Learn more{" "}
-												<FontAwesomeIcon
-													icon={faChevronRight}
-												/>
+											<Link className="inline-link" href="/about">
+												Learn more <FontAwesomeIcon icon={faChevronRight} />
 											</Link>
 										</Col>
 									</Row>
@@ -124,26 +113,18 @@ export default function Index() {
 									<Row>
 										<Col>
 											<p className="desc">
-												Each semester, our teams work
-												with various organizations and
-												build cutting-edge solutions for
-												a vast array of problems. The
-												projects we focus on can range
-												from Full-Stack Web Development
-												to Software Development.
+												Each semester, our teams work with various
+												organizations and build cutting-edge solutions for a
+												vast array of problems. The projects we focus on can
+												range from Full-Stack Web Development to Software
+												Development.
 											</p>
 										</Col>
 									</Row>
 									<Row>
 										<Col>
-											<Link
-												className="inline-link"
-												href="/services"
-											>
-												Learn more{" "}
-												<FontAwesomeIcon
-													icon={faChevronRight}
-												/>
+											<Link className="inline-link" href="/services">
+												Learn more <FontAwesomeIcon icon={faChevronRight} />
 											</Link>
 										</Col>
 									</Row>
@@ -172,10 +153,7 @@ export default function Index() {
 								<div>
 									<Row>
 										<Col>
-											<FontAwesomeIcon
-												icon={faUser}
-												className="stats-icon"
-											/>
+											<FontAwesomeIcon icon={faUser} className="stats-icon" />
 										</Col>
 									</Row>
 									<Row>
@@ -185,9 +163,7 @@ export default function Index() {
 									</Row>
 									<Row>
 										<Col>
-											<p className="stats-base">
-												Students
-											</p>
+											<p className="stats-base">Students</p>
 										</Col>
 									</Row>
 								</div>
@@ -196,10 +172,7 @@ export default function Index() {
 								<div>
 									<Row>
 										<Col>
-											<FontAwesomeIcon
-												icon={faBook}
-												className="stats-icon"
-											/>
+											<FontAwesomeIcon icon={faBook} className="stats-icon" />
 										</Col>
 									</Row>
 									<Row>
@@ -231,9 +204,7 @@ export default function Index() {
 									</Row>
 									<Row>
 										<Col>
-											<p className="stats-base">
-												Projects
-											</p>
+											<p className="stats-base">Projects</p>
 										</Col>
 									</Row>
 								</div>
@@ -242,24 +213,17 @@ export default function Index() {
 								<div>
 									<Row>
 										<Col>
-											<FontAwesomeIcon
-												icon={faCode}
-												className="stats-icon"
-											/>
+											<FontAwesomeIcon icon={faCode} className="stats-icon" />
 										</Col>
 									</Row>
 									<Row>
 										<Col>
-											<p className="stats-number">
-												10,000+
-											</p>
+											<p className="stats-number">10,000+</p>
 										</Col>
 									</Row>
 									<Row>
 										<Col>
-											<p className="stats-base">
-												Lines of Code
-											</p>
+											<p className="stats-base">Lines of Code</p>
 										</Col>
 									</Row>
 								</div>
@@ -279,22 +243,19 @@ export default function Index() {
 					<Row>
 						<Col>
 							<p className="desc">
-								BUILD is a fantastic way to apply your knowledge
-								gained from class to impact lives. We work in
-								small teams to build technological solutions for
-								nonprofits and local businesses. We are looking
-								forward to the growth of BUILD as more people
-								get involved. We have applications for business
-								and project developers at the beginning of each
-								semester.
+								BUILD is a fantastic way to apply your knowledge gained from class
+								to impact lives. We work in small teams to build technological
+								solutions for nonprofits and local businesses. We are looking
+								forward to the growth of BUILD as more people get involved. We have
+								applications for business and project developers at the beginning of
+								each semester.
 							</p>
 						</Col>
 					</Row>
 					<Row>
 						<Col>
 							<Link className="inline-link" href="/apply">
-								Learn more{" "}
-								<FontAwesomeIcon icon={faChevronRight} />
+								Learn more <FontAwesomeIcon icon={faChevronRight} />
 							</Link>
 						</Col>
 					</Row>
@@ -309,9 +270,8 @@ export default function Index() {
 					<Row>
 						<Col>
 							<p className="desc">
-								Our members are brilliant students and
-								professionals and often end up working for the
-								best companies in the industry.
+								Our members are brilliant students and professionals and often end
+								up working for the best companies in the industry.
 							</p>
 						</Col>
 					</Row>
@@ -354,10 +314,7 @@ export default function Index() {
 							<img src="img/logo/massmutual.svg" />
 						</Col>
 						<Col md={4} className="center space">
-							<img
-								src="img/logo/liberty-mutual.png"
-								className="logo"
-							/>
+							<img src="img/logo/liberty-mutual.png" className="logo" />
 						</Col>
 						<Col md={4} className="center space">
 							<img src="img/logo/payfactors.png" />
