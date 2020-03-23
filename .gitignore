@@ -89,6 +89,7 @@ node_modules/
 # misc
 .DS_Store
 .env*
+**/.DS_Store
 
 # debug
 npm-debug.log*

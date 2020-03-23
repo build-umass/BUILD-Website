@@ -45,7 +45,14 @@ const about = () => {
                                     </Row>
                                     <Row>
                                         <Col className="center">
-                                            <Button>Join Us!</Button>
+                                            <Button
+                                            className="btn-light"
+                                            onClick={() => {
+                                                window.open(
+                                                    "/services", "_self"
+                                                );
+                                            }}
+                                            >Join Us!</Button>
                                         </Col>
                                     </Row>
                                 </div>

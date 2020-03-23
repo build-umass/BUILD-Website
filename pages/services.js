@@ -44,7 +44,14 @@ export default function services() {
                                 </Row>
                                 <Row>
                                     <Col className="center">
-                                        <Button>Get in touch!</Button>
+                                        <Button
+                                        className="btn-light"
+                                        onClick={() => {
+                                            window.open(
+                                                "https://forms.gle/wpjcYdzbnqvfFm7H7"
+                                            );
+                                        }}
+                                        >Get in touch!</Button>
                                     </Col>
                                 </Row>
                             </div>
