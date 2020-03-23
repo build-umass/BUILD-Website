@@ -7,6 +7,11 @@ $secondary-font: "Source Sans Pro", sans-serif;
 $primary-color: #c82104;
 $base-color: #000000;
 $red-gradient: linear-gradient(to right, #a30000, #f44708);
+$red-gradient-transparent: linear-gradient(
+    to right,
+    rgba(163, 0, 0, 0.75),
+    rgba(244, 71, 8, 0.75)
+);
 
 body {
     font-family: $secondary-font;
@@ -43,6 +48,10 @@ h6 {
     &:hover {
         text-decoration: underline;
     }
+}
+
+.dark-text {
+    color: $base-color;
 }
 
 .btn {
@@ -109,12 +118,17 @@ h6 {
     text-align: center;
 }
 
+.center-vertical {
+    display: flex;
+    justify-content: center;
+}
+
 .top {
-	padding-top: 18px;
+    padding-top: 18px;
 }
 
 .bottom {
-	padding-top: 1em;
+    padding-top: 1em;
 }
 
 .lineskip {
@@ -144,6 +158,16 @@ img {
     padding-bottom: 2em;
 }
 
+.padding4 {
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+.padding5 {
+    padding-top: 6em;
+    padding-bottom: 6.5em;
+}
+
 .margin1 {
     margin-top: 7em;
     margin-bottom: 5em;
@@ -152,6 +176,29 @@ img {
 .margin2 {
     margin-top: 7em;
     margin-bottom: 8em;
+}
+
+.margin3 {
+    margin-top: 5em;
+    margin-bottom: 2em;
+}
+
+.margin4 {
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+.margin5 {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.margin-bottom {
+    margin-bottom: 5em;
+}
+
+.left-margin {
+    margin-left: 30px;
 }
 
 .desc {
@@ -172,6 +219,8 @@ img {
     margin-left: 5px;
     font-size: 18px;
 }
+
+// Home Page
 
 .sq-bg {
     background: url("../public/img/square-pattern.svg");
@@ -241,10 +290,40 @@ img {
 }
 
 .logo {
-	width: 70% !important;
+    width: 70% !important;
 }
 
 .space {
-	padding: 12px;
-	margin-bottom: 12px;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+
+// About Page
+
+.about-bg {
+    background: url("../public/img/group-pic-2020.png");
+    background-size: cover;
+    background-position: 50% 70%;
+}
+
+.bg-gradient {
+    background: $red-gradient;
+}
+
+.bg-gradient-transparent {
+    background: $red-gradient-transparent;
+}
+
+.top-curve {
+    width: 100%;
+    height: 10vh;
+    border-radius: 100% 0% 0% 0% / 95% 5% 0% 0%;
+    background: linear-gradient(to right, #a30000, #f44708);
+}
+
+.bottom-curve {
+    width: 100%;
+    height: 10vh;
+    border-radius: 0% 0% 95% 0% / 0% 0% 95% 100%;
+    background: linear-gradient(to right, #a30000, #f44708);
 }

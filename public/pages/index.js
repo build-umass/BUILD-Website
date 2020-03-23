@@ -22,9 +22,9 @@ export default function Index() {
     return (
         <div>
             <div className="sq-bg">
-				{/* Navbar */}
+                {/* Navbar */}
                 <Navbar />
-				{/* Landing Jumbotron */}
+                {/* Landing Jumbotron */}
                 <Container className="pg-jumbotron center">
                     <Row className="padding1">
                         <Col>
@@ -39,7 +39,7 @@ export default function Index() {
                                 </Row>
                                 <Row>
                                     <Col>
-                                        <p className="pg-heading center primary-font">
+                                        <p className="pg-heading center">
                                             We are a group of students committed
                                             to provide non-profits, startups and
                                             local businesses with scalable
@@ -306,7 +306,7 @@ export default function Index() {
                             </p>
                         </Col>
                     </Row>
-                    <Row>
+                    <Row className="center">
                         {/* Map over logos */}
                         <Col md={4} className="center space">
                             <img src="img/logo/msft.svg" />
@@ -327,10 +327,10 @@ export default function Index() {
                             <img src="img/logo/cisco.svg" className="logo" />
                         </Col>
                         <Col md={4} className="center space">
-                            <img src="img/logo/mastercard.svg" />
+                            <img src="img/logo/visa.png" className="logo" />
                         </Col>
                         <Col md={4} className="center space">
-                            <img src="img/logo/visa.png" className="logo" />
+                            <img src="img/logo/mastercard.svg" />
                         </Col>
                         <Col md={4} className="center space">
                             <img src="img/logo/fidelity.svg" />
@@ -343,6 +343,18 @@ export default function Index() {
                         </Col>
                         <Col md={4} className="center space">
                             <img src="img/logo/massmutual.svg" />
+                        </Col>
+                        <Col md={4} className="center space">
+                            <img
+                                src="img/logo/liberty-mutual.png"
+                                className="logo"
+                            />
+                        </Col>
+                        <Col md={4} className="center space">
+                            <img src="img/logo/payfactors.png" />
+                        </Col>
+                        <Col md={4} className="center space">
+                            <img src="img/logo/blue-cross-blue-shield.png" />
                         </Col>
                     </Row>
                 </div>

@@ -1,4 +1,6 @@
 import React from "react";
+import Head from "next/head";
+
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 // import NavDropdown from "react-bootstrap/NavDropdown";
@@ -7,6 +9,9 @@ import Container from "react-bootstrap/Container";
 export default function Index() {
     return (
         <div>
+			<Head>
+                <title>BUILD UMass</title>
+            </Head>
             <Navbar bg="transparent" expand="lg">
                 <Container>
                     <Navbar.Brand href="/index">BUILD UMass</Navbar.Brand>
