@@ -54,13 +54,21 @@ h6 {
     color: $base-color;
 }
 
+a {
+    color: white;
+    &:hover {
+        color: white;
+        text-decoration: none;
+    }
+}
+
 .btn {
     background-color: white;
     font-family: $primary-font;
     color: $base-color;
     border: none;
     &:hover {
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.85);
         color: $base-color;
         border: none;
     }
@@ -94,6 +102,20 @@ h6 {
             margin-bottom: 8px;
         }
     }
+}
+
+@media(max-width: 414px){
+    .footer-col {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+.icon {
+    margin: 10px;
 }
 
 .copyright {
@@ -195,6 +217,10 @@ img {
 
 .margin-bottom {
     margin-bottom: 5em;
+}
+
+.margin-bottom2 {
+    margin-bottom: 5px;
 }
 
 .left-margin {

@@ -1,11 +1,12 @@
 {
-  "name": "public",
-  "version": "0.1.0",
+  "name": "build-umass-website",
+  "version": "3.0.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "build": "next build && next export",
+    "start": "next start",
+    "serve": "firebase serve"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.12.1",
