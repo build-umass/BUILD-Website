@@ -1,5 +1,5 @@
 // Imports
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Source+Sans+Pro:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Source+Sans+Pro:300,400,700&display=swap");
 
 // Variables
 $primary-font: "Montserrat", sans-serif;
@@ -51,6 +51,13 @@ h6 {
 }
 
 a {
+	color: $primary-color;
+	&:hover {
+		color: $primary-color;
+	}
+}
+
+.white-link {
 	color: white;
 	&:hover {
 		color: white;
@@ -75,6 +82,27 @@ a {
 		:focus {
 			background-color: white !important;
 			color: $base-color !important;
+			border: none;
+		}
+	}
+}
+
+.color {
+	background-color: $primary-color;
+	color: white;
+	font-family: $secondary-font;
+	&:hover {
+		background-color: $primary-color;
+		color: white;
+		border: none;
+	}
+	&:active {
+		background-color: $primary-color !important;
+		color: white !important;
+		border: none;
+		:focus {
+			background-color: $primary-color !important;
+			color: white !important;
 			border: none;
 		}
 	}
@@ -124,6 +152,24 @@ a {
 	margin: 10px;
 }
 
+.thumbnail {
+	max-height: 150px;
+	margin-bottom: 14px;
+}
+
+.thumbnail2 {
+	max-height: 150px;
+}
+
+.bio {
+	font-size: 16px;
+}
+
+.light {
+	// font-size: 16px;
+	color: rgba($color: $base-color, $alpha: 0.65);
+}
+
 .copyright {
 	font-size: 14px;
 	font-family: $primary-font;
@@ -149,6 +195,11 @@ a {
 .center-vertical {
 	display: flex;
 	justify-content: center;
+}
+
+.center-horizontal {
+	align-items: center;
+	text-align: center;
 }
 
 .top {
@@ -227,6 +278,24 @@ img {
 
 .margin-bottom2 {
 	margin-bottom: 5px;
+}
+
+.margin-bottom3 {
+	margin-bottom: 30px;
+}
+
+.margin-bottom4 {
+	margin-bottom: 10px;
+}
+
+.margin-bottom5 {
+	margin-bottom: 2em;
+}
+
+.margin-lr {
+	$dist: 30px;
+	margin-left: $dist;
+	margin-right: $dist;
 }
 
 .left-margin {
@@ -358,4 +427,8 @@ img {
 	height: 10vh;
 	border-radius: 0% 0% 95% 0% / 0% 0% 95% 100%;
 	background: linear-gradient(to right, #a30000, #f44708);
+}
+
+.particlejs {
+	position: absolute;
 }

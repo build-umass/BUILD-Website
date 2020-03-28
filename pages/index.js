@@ -51,7 +51,7 @@ export default function Index() {
 										<Button
 											className="btn-light"
 											onClick={() => {
-												window.open("https://forms.gle/wpjcYdzbnqvfFm7H7");
+												window.open("/contact", "_self");
 											}}
 										>
 											Get in touch!

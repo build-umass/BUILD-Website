@@ -30,19 +30,29 @@ export default function Footer() {
 								<a
 									href="https://www.facebook.com/BUILD-UMass-567327120439466/"
 									target="_blank"
+									className="white-link"
 								>
 									<FontAwesomeIcon icon={faFacebook} className="icon" />
 								</a>
-								<a href="https://www.instagram.com/build.umass/" target="_blank">
+								<a
+									href="https://www.instagram.com/build.umass/"
+									target="_blank"
+									className="white-link"
+								>
 									<FontAwesomeIcon icon={faInstagram} className="icon" />
 								</a>
 								<a
 									href="https://www.linkedin.com/company/buildumass/"
 									target="_blank"
+									className="white-link"
 								>
 									<FontAwesomeIcon icon={faLinkedin} className="icon" />
 								</a>
-								<a href="https://github.com/build-umass" target="_blank">
+								<a
+									href="https://github.com/build-umass"
+									target="_blank"
+									className="white-link"
+								>
 									<FontAwesomeIcon icon={faGithub} className="icon" />
 								</a>
 							</Row>

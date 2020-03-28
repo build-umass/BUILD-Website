@@ -2,6 +2,7 @@ import React from "react";
 
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import MemberCard from "../components/MemberCard";
 
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -44,7 +45,7 @@ const about = () => {
 											<Button
 												className="btn-light"
 												onClick={() => {
-													window.open("/services", "_self");
+													window.open("/apply", "_self");
 												}}
 											>
 												Join Us!
@@ -80,7 +81,7 @@ const about = () => {
 					</Row>
 				</div>
 				{/* Our Story */}
-				<div className="margin3">
+				<div className="margin4">
 					<Row>
 						<Col>
 							<h1>Our Story</h1>
@@ -121,9 +122,9 @@ const about = () => {
 									<Row>
 										<Col>
 											<p className="pg-heading center">
-												We have applications for developer positions that
-												open at the start of each semester. Upon completion,
-												we will contact you for an interview. If you are not
+												We have applications for various positions that open
+												at the start of each semester. Upon completion, we
+												will contact you for an interview. If you are not
 												sure which position is best for you, apply to all
 												positions!
 											</p>
@@ -142,14 +143,34 @@ const about = () => {
 				<div className="bottom-curve" />
 			</div>
 			{/* Meet the Team */}
-			<Container>
+			<Container className="margin-bottom5">
 				<Row className="center margin3">
 					<Col>
 						<h1>Meet the team</h1>
 					</Col>
 				</Row>
-				<Row>
-					<Col>{/* Map over all members */}</Col>
+				<Row className="center">
+					<Col sm={3}>
+						<MemberCard />
+					</Col>
+					<Col sm={3}>
+						<MemberCard />
+					</Col>
+					<Col sm={3}>
+						<MemberCard />
+					</Col>
+					<Col sm={3}>
+						<MemberCard />
+					</Col>
+					<Col sm={3}>
+						<MemberCard />
+					</Col>
+					<Col sm={3}>
+						<MemberCard />
+					</Col>
+					<Col sm={3}>
+						<MemberCard />
+					</Col>
 				</Row>
 			</Container>
 			{/* Footer */}
