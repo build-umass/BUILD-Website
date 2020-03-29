@@ -7,6 +7,7 @@
 		"build": "yarn prettier --write . && next build && next export",
 		"start": "next start",
 		"serve": "firebase serve",
+		"heroku-postbuild": "yarn run build",
 		"format": "yarn prettier --write ./pages && yarn prettier --write ./styles && yarn prettier --write ./components"
 	},
 	"dependencies": {
@@ -31,11 +32,6 @@
 		"husky": "^4.2.3",
 		"prettier": "2.0.1",
 		"pretty-quick": "^2.0.1"
-	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "lint-staged"
-		}
 	},
 	"lint-staged": {
 		"linters": {
