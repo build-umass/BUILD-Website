@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
-		"build": "yarn prettier --write . && next build && next export",
+		"build": "yarn format && next build && next export",
 		"start": "next start",
 		"serve": "firebase serve",
 		"heroku-postbuild": "yarn run build",
