@@ -5,9 +5,8 @@
 	"scripts": {
 		"dev": "next dev",
 		"build": "yarn format && next build && next export",
-		"start": "next start",
+		"start": "next start -p $PORT",
 		"serve": "firebase serve",
-		"heroku-postbuild": "yarn run build",
 		"format": "yarn prettier --write ./pages && yarn prettier --write ./styles && yarn prettier --write ./components"
 	},
 	"dependencies": {

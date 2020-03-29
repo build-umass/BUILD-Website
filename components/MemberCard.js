@@ -23,7 +23,8 @@ export default function MemberCard() {
 				<Row>
 					<Col>
 						<p className="bio">
-							I have a passion for data analytics, hoping to apply my expertise to the field of sustainability
+							I have a passion for data analytics, hoping to apply my expertise to the
+							field of sustainability
 						</p>
 					</Col>
 				</Row>
