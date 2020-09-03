@@ -1,0 +1,39 @@
+{
+  "name": "build-umass-website",
+  "version": "3.0.1",
+  "description": "This is the GitHub repository for the official BUILD UMass Website. It contains the current and all previous versions of the website and its assets. The development of the current version is done using  [Next.js](https://nextjs.org/).",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd src && yarn build",
+    "full-install": "yarn install && cd src && yarn install",
+    "prebuild": "yarn full-install",
+    "prestart": "yarn full-install",
+    "serve": "firebase serve",
+    "start": "cd src && yarn dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/build-umass/BUILD-Website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/build-umass/BUILD-Website/issues"
+  },
+  "homepage": "https://github.com/build-umass/BUILD-Website#readme",
+  "dependencies": {
+    "firebase-tools": "^8.9.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.8.1",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.6",
+    "prettier": "^2.1.1"
+  }
+}
