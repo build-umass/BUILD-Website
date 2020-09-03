@@ -6,6 +6,7 @@
   "scripts": {
     "build": "cd src && yarn build",
     "full-install": "yarn install && cd src && yarn install",
+    "heroku-postbuild": "yarn build",
     "prebuild": "yarn full-install",
     "prestart": "yarn full-install",
     "serve": "firebase serve",
