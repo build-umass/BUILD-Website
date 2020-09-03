@@ -124,7 +124,7 @@ export default function apply() {
             <Col md={4} className="margin-lr">
               <div className="center-horizontal">
                 <img
-                  src="img/illustrations/teamwork.svg"
+                  src="/img/illustrations/teamwork.svg"
                   className="thumbnail"
                   alt="Teamwork"
                 />
@@ -137,7 +137,7 @@ export default function apply() {
             <Col md={4} className="margin-lr">
               <div className="center-horizontal">
                 <img
-                  src="img/illustrations/passion.svg"
+                  src="/img/illustrations/passion.svg"
                   className="thumbnail"
                   alt="Passion"
                 />
@@ -152,7 +152,7 @@ export default function apply() {
             <Col md={4} className="margin-lr">
               <div className="center-horizontal">
                 <img
-                  src="img/illustrations/growth.svg"
+                  src="/img/illustrations/growth.svg"
                   className="thumbnail"
                   alt="Growth"
                 />
@@ -166,7 +166,7 @@ export default function apply() {
             <Col md={4} className="margin-lr">
               <div className="center-horizontal">
                 <img
-                  src="img/illustrations/culture.svg"
+                  src="/img/illustrations/culture.svg"
                   className="thumbnail"
                   alt="Culture"
                 />
