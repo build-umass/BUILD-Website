@@ -1,9 +1,5 @@
 {
-  "extends": [
-    "airbnb",
-    "plugin:prettier/recommended",
-    "prettier/react"
-  ],
+  "extends": ["airbnb", "plugin:prettier/recommended", "prettier/react"],
   "env": {
     "browser": true,
     "commonjs": true,
@@ -28,5 +24,13 @@
         "ignoreRegExpLiterals": true
       }
     ]
-  }
+  },
+  "overrides": [
+    {
+      "files": ["**/deprecated/*.js"],
+      "rules": {
+        "require-jsdoc": "off"
+      }
+    }
+  ]
 }
