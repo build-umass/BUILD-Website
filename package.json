@@ -2,7 +2,6 @@
   "name": "build-umass-website",
   "version": "3.0.1",
   "description": "This is the GitHub repository for the official BUILD UMass Website. It contains the current and all previous versions of the website and its assets. The development of the current version is done using  [Next.js](https://nextjs.org/).",
-  "main": "index.js",
   "scripts": {
     "build": "cd src && yarn build",
     "full-install": "yarn install && cd src && yarn install",
@@ -10,7 +9,8 @@
     "prebuild": "yarn full-install",
     "prestart": "yarn full-install",
     "serve": "firebase serve",
-    "start": "cd src && yarn dev"
+    "start": "cd src && yarn start",
+    "dev": "cd src && yarn dev"
   },
   "repository": {
     "type": "git",
