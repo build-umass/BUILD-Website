@@ -132,7 +132,7 @@ const about = () => {
                   </Row>
                   <Row>
                     <Col className="center">
-                      <Button>Apply!</Button>
+                      <Button href="/apply">Apply!</Button>
                     </Col>
                   </Row>
                 </div>

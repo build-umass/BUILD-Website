@@ -43,7 +43,11 @@ export default function services() {
                     <Button
                       className="btn-light"
                       onClick={() => {
-                        window.open('/contact', '_self');
+                        // window.open('/contact', '_self');
+                        window.open(
+                          'https://forms.gle/uuA2s98v4oC4o8TU7',
+                          '_blank'
+                        );
                       }}
                     >
                       Get in touch!
@@ -206,7 +210,17 @@ export default function services() {
                   </Row>
                   <Row>
                     <Col className="center">
-                      <Button>Get in touch!</Button>
+                      <Button
+                        onClick={() => {
+                          // window.open('/contact', '_self');
+                          window.open(
+                            'https://forms.gle/uuA2s98v4oC4o8TU7',
+                            '_blank'
+                          );
+                        }}
+                      >
+                        Get in touch!
+                      </Button>
                     </Col>
                   </Row>
                 </div>
