@@ -57,7 +57,7 @@ const about = () => {
       </div>
       <Container>
         {/* Mission */}
-        <div className="margin3">
+        <div className="margin3" id="Mission">
           <Row>
             <Col>
               <h1>Mission</h1>
@@ -79,7 +79,7 @@ const about = () => {
           </Row>
         </div>
         {/* Our Story */}
-        <div className="margin4">
+        <div className="margin4" id="Story">
           <Row>
             <Col>
               <h1>Our Story</h1>
