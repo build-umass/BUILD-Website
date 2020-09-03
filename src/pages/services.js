@@ -78,7 +78,7 @@ export default function services() {
         {/* Types */}
         <Container>
           {/* Software Development */}
-          <div className="margin3">
+          <div className="margin3" id="Software">
             <Row>
               <Col className="center-vertical">
                 <div className="center">
@@ -114,7 +114,7 @@ export default function services() {
             </Row>
           </div>
           {/* Web Development */}
-          <div className="margin3">
+          <div className="margin3" id="Web">
             <Row>
               <Col className="center-vertical">
                 <div className="center">
@@ -147,7 +147,7 @@ export default function services() {
             </Row>
           </div>
           {/* Tech Consulting & Data Analytics */}
-          <div className="margin3">
+          <div className="margin3" id="Consulting">
             <Row className="center-vertical">
               <Col>
                 <div className="center">
