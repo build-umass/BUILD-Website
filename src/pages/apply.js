@@ -69,7 +69,7 @@ export default function apply() {
                   <Button
                     className="color"
                     onClick={() => {
-                      window.open('https://forms.gle/ir9tJrAyXSbNcp9Z7');
+                      window.open('https://forms.gle/6Y8f3iXTNDWxjKg4A');
                     }}
                   >
                     Apply
@@ -90,7 +90,7 @@ export default function apply() {
                   <Button
                     className="color"
                     onClick={() => {
-                      window.open('https://forms.gle/UcSPQj4DCxCiUSY77');
+                      window.open('https://forms.gle/ThwsHHLwqCYiyVvQ6');
                     }}
                   >
                     Apply
