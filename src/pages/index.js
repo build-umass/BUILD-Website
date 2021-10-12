@@ -43,7 +43,11 @@ export default function Index() {
                     <p className="pg-heading center">
                       We are a group of students committed to provide
                       non-profits, startups and local businesses with scalable
+<<<<<<< HEAD
                       technological solution through pro-bono consulting
+=======
+                      technological solutions through pro-bono consulting
+>>>>>>> cd81d2034616642edba14d98e26ad19bb3f0dac7
                       engagements.
                     </p>
                   </Col>
