@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/build-umass/BUILD-Website#readme",
   "dependencies": {
+    "firebase": "^8.9.1",
     "firebase-tools": "^8.9.2"
   },
   "devDependencies": {
