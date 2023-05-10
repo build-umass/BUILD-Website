@@ -28,8 +28,8 @@ export default function Index() {
               <Nav.Link href="/apply">Apply</Nav.Link>
               <Nav.Link
                 // Todo: Connect with Cheerio
-                href="/contact"
-                // href="https://forms.gle/uuA2s98v4oC4o8TU7"
+                // href="/contact"
+                href="https://forms.gle/uuA2s98v4oC4o8TU7"
                 target="_blank"
               >
                 Contact
