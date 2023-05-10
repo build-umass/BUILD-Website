@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
@@ -23,11 +24,12 @@ export default function Index() {
               <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="/about">About</Nav.Link>
               <Nav.Link href="/services">Services</Nav.Link>
+              <Nav.Link href="/projects">Projects</Nav.Link>
               <Nav.Link href="/apply">Apply</Nav.Link>
               <Nav.Link
                 // Todo: Connect with Cheerio
-                // href="/contact"
-                href="https://forms.gle/uuA2s98v4oC4o8TU7"
+                href="/contact"
+                // href="https://forms.gle/uuA2s98v4oC4o8TU7"
                 target="_blank"
               >
                 Contact

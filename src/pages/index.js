@@ -102,6 +102,7 @@ export default function Index() {
               <Col>
                 <div className="center">
                   <img
+                    className="illust"
                     src="/img/illustrations/about.svg"
                     alt="About Illustration"
                   />
@@ -140,7 +141,7 @@ export default function Index() {
               </Col>
               <Col>
                 <div className="center">
-                  <img src="/img/illustrations/services.svg" alt="Services" />
+                  <img className="illust" src="/img/illustrations/services.svg" alt="Services" />
                 </div>
               </Col>
             </Row>
@@ -286,40 +287,40 @@ export default function Index() {
           <Row className="center">
             {/* Map over logos */}
             <Col md={4} className="center space">
-              <img src="img/logo/msft.svg" alt="MSFT" />
+              <img className="company-logo" src="img/logo/msft.svg" alt="MSFT" />
             </Col>
             <Col md={4} className="center space">
-              <img src="img/logo/fb.svg" alt="FB" />
+              <img className="company-logo" src="img/logo/fb.svg" alt="FB" />
             </Col>
             <Col md={4} className="center space">
-              <img src="img/logo/goog.svg" alt="GOOG" />
+              <img className="company-logo" src="img/logo/goog.svg" alt="GOOG" />
             </Col>
             <Col md={4} className="center space">
-              <img src="img/logo/Amazon_logo.svg" alt="AMZN" />
+              <img className="company-logo" src="img/logo/Amazon_logo.svg" alt="AMZN" />
             </Col>
             <Col md={4} className="center space">
-              <img src="img/logo/uber.svg" className="logo" alt="UBER" />
+              <img className="company-logo" src="img/logo/uber.svg" className="logo" alt="UBER" />
             </Col>
             <Col md={4} className="center space">
-              <img src="img/logo/cisco.svg" className="logo" alt="CSCO" />
+              <img className="company-logo" src="img/logo/cisco.svg" className="logo" alt="CSCO" />
             </Col>
             <Col md={4} className="center space">
-              <img src="img/logo/visa.png" className="logo" alt="V" />
+              <img className="company-logo" src="img/logo/visa.png" className="logo" alt="V" />
             </Col>
             <Col md={4} className="center space">
-              <img src="img/logo/mastercard.svg" alt="MA" />
+              <img className="company-logo" src="img/logo/mastercard.svg" alt="MA" />
             </Col>
             <Col md={4} className="center space">
-              <img src="img/logo/fidelity.svg" alt="Fidelity" />
+              <img className="company-logo" src="img/logo/fidelity.svg" alt="Fidelity" />
             </Col>
             <Col md={4} className="center space ">
-              <img src="img/logo/pratt-whitney.svg" alt="Pratt and Whitney" />
+              <img className="company-logo" src="img/logo/pratt-whitney.svg" alt="Pratt and Whitney" />
             </Col>
             <Col md={4} className="center space">
-              <img src="img/logo/dell.png" className="logo" alt="DELL" />
+              <img className="company-logo" src="img/logo/dell.png" className="logo" alt="DELL" />
             </Col>
             <Col md={4} className="center space">
-              <img src="img/logo/massmutual.svg" alt="MassMutual" />
+              <img className="company-logo" src="img/logo/massmutual.svg" alt="MassMutual" />
             </Col>
             <Col md={4} className="center space">
               <img
@@ -329,10 +330,10 @@ export default function Index() {
               />
             </Col>
             <Col md={4} className="center space">
-              <img src="img/logo/payfactors.png" alt="Payfactors" />
+              <img className="company-logo" src="img/logo/payfactors.png" alt="Payfactors" />
             </Col>
             <Col md={4} className="center space">
-              <img src="img/logo/blue-cross-blue-shield.png" alt="Blue Cross" />
+              <img className="company-logo" src="img/logo/blue-cross-blue-shield.png" alt="Blue Cross" />
             </Col>
           </Row>
         </div>

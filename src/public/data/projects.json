@@ -1,0 +1,118 @@
+[
+  {
+    "year": "2023",
+    "projects": [
+      {
+        "title": "MassPirg",
+        "tech_lead": "Thinh Nguyen",
+        "sdes": [
+          "Aryan Nair", 
+          "Simran Lekhwani", 
+          "Rohan Raghuram", 
+          "Shoubhit Ravi"
+        ],
+        "bizdevs": [
+          "Khanh Ngoc Nam Hyunh", 
+          "Sabrina Liu"
+        ],
+        "description": "Students have the power to shape the future we will inherit. We work with professional staff at colleges and universities to make sure our peers have the skills, opportunities and training they need to create a better, more sustainable future for all of us. Our chapters provide the training, professional support and resources students need to tackle climate change, protect public health, revitalize our democracy, feed the hungry and more. Students have been at the forefront of social change throughout history, from civil rights, to voting rights to protecting the environment. For nearly 50 years we've helped students to get organized, mobilized and energized so they can continue to be on the cutting edge of positive change.",
+        "image_url": "./img/projects/MassPirg_S23.png"
+      },
+      {
+        "title": "IUCG",
+        "tech_lead": "Benjamin Fenelson",
+        "sdes": [
+          "Bennett Gillig",
+          "Thomas Ji",
+          "Yiming Yuan",
+          "Aditya Maheshwari"
+        ],
+        "bizdevs": [
+          "Cynthia Rajeshkanna", 
+          "Tiffany Nguyen"
+        ],
+        "description": "Founded in 2013 by several enterprising young undergraduates, the Isenberg Undergraduate Consulting group has since grown to become one of the most prestigious, active, and selective student organization on campus. To ensure our clients are receiving the very best, IUCG employs a rigorous recruiting process, selecting less than 9% of our applicants to serve on project teams. Based on the needs of each client, we combine our analysts with diverse experiences and skill sets with tenured project managers to deliver a superb project team.",
+        "image_url": "./img/projects/IUCG_S23.png"
+      },
+      {
+        "title": "AiS",
+        "tech_lead": "Ananya Shekhawat",
+        "sdes": [
+          "Eric Fournier", 
+          "Yongye Tan", 
+          "Adam Smith", 
+          "Shoubhit Ravi"
+        ],
+        "bizdevs": [
+          "Hallie Liu", 
+          "Vishwesh Palani"
+        ],
+        "description": "AIS has a dashboard for video surveillance footage, with the frontend built in Vue, and the backend built in Nest.js. AIS wishes to convert the existing frontend only to React, and also have that React version converted to a mobile app using existing conversion tools. PWA recommends using Material UI on React, written as a Progressive Web App (PWA).",
+        "image_url": "./img/projects/AIS_S23.png"
+      },
+      {
+        "title": "UMass Fitness and Nutrition",
+        "tech_lead": "Jiaqi (Jay) Ye",
+        "sdes": [
+          "Nicole Kaldus",
+          "Khushi Rajoria",
+          "Uma Purani",
+          "Aditi Bansal",
+          "Eric Wu"
+        ],
+        "bizdevs": [
+          "Christopher Setiawan"
+        ],
+        "description": "UMass Fitness and Nutrition is a newly founded club at UMass focused around eating healthy and exercising regularly. The club's goal is to promote healthy lifestyles that can be achieved even as a full time college student.",
+        "image_url": "./img/projects/UMassFitness_S23.png"
+      },
+      {
+        "title": "Upward Bound",
+        "tech_lead": "Justin Baltazar",
+        "sdes": [
+          "Quang Dang",
+          "Vani Gupta",
+          "Maggie Li",
+          "Matt O'Neill",
+          "Ishaan Shetty",
+          "Limbani George Chaponda"
+        ],
+        "bizdevs": [
+          "Taru Meshram",
+          "Erica Phan"
+        ],
+        "description": "Upward Bound program is a year-round, federally sponsored, educational program serving high school students from Springfield's High School of Commerce. Students are eligible to participate if they are from families in which neither parent has a bachelor's degree, and/or if they qualify as low-income. Upward Bound's goal  is to increase the rate at which participants successfully complete high school, and enroll in and graduate from college. Upward Bound stresses the development of academic skills and motivation for students who might not traditionally be considered college-bound. During the academic year, participants are provided a variety of services ranging from individual tutoring, career advising, SAT and MCAS prep, to college-positive workshops, cultural enrichment and much more. In addition, the program addresses other issues critical to success in high school and college such as time management, self-discipline, responsibility, self-esteem, multicultural knowledge, social justice and respect.",
+        "image_url": "./img/projects/UpwardBound_S23.png"
+      }
+    ]
+  },
+  {
+    "year": "2022",
+    "projects": [
+      {
+        "title": "Phenom",
+        "tech_lead": "",
+        "sdes": [],
+        "bizdevs": [],
+        "description": "The Public Higher Education Network of Massachusetts (PHENOM) unites students, families, alumni, professors, staff, and community members from our state universities, community colleges and the UMass system to advocate for high-quality, debt-free public college.",
+        "image_url": "./img/projects/Phenom_S22.png"
+      },
+      {
+        "title": "Student Bridges",
+        "tech_lead": "",
+        "sdes": [],
+        "bizdevs": [],
+        "description": "Student Bridges is a non-profit, student run agency that works to improve access and success for underrepresented students.",
+        "image_url": "./img/projects/StudentBridges_S22.png"
+      },
+      {
+        "title": "Lobstermen",
+        "tech_lead": "",
+        "sdes": [],
+        "bizdevs": [],
+        "description": "The Massachusetts Lobstermen's Association was established in 1963 by the fishermen, for the fishermen, and is presently one of the leading commercial fishing industry associations in New England. On behalf of the 1,800 members, the MLA works to maintain both the industry and the resource. The MLA strives to be proactive on issues affecting the lobster industry and is active in the management process at both the state and federal levels. The MLA communicates with its members through a monthly newspaper, weekly email, Facebook, and attendance at industry meetings. For the past 60 years, the MLA has become a trustworthy voice for the industry on important issues, and is looked to by both the fishing industry and the management community.",
+        "image_url": "./img/projects/Lobstermen_S22.png"
+      }
+    ]
+  }
+]

@@ -18,7 +18,7 @@ export default function services() {
         <Container className="center">
           <Row className="padding5">
             <Col sm={5}>
-              <img src="/img/hello-world.gif" alt="Hello World" />
+              <img className="illust" src="/img/hello-world.gif" alt="Hello World" />
             </Col>
             <Col>
               <div>
@@ -87,6 +87,7 @@ export default function services() {
               <Col className="center-vertical">
                 <div className="center">
                   <img
+                    className="illust"
                     src="/img/illustrations/software-dev.svg"
                     alt="Software Dev"
                   />
@@ -122,7 +123,7 @@ export default function services() {
             <Row>
               <Col className="center-vertical">
                 <div className="center">
-                  <img src="/img/illustrations/web-dev.svg" alt="Web Dev" />
+                  <img className="illust" src="/img/illustrations/web-dev.svg" alt="Web Dev" />
                 </div>
               </Col>
               <Col sm={9} className="center-vertical">
@@ -155,7 +156,7 @@ export default function services() {
             <Row className="center-vertical">
               <Col>
                 <div className="center">
-                  <img src="/img/illustrations/data.svg" alt="Data" />
+                  <img className="illust" src="/img/illustrations/data.svg" alt="Data" />
                 </div>
               </Col>
               <Col sm={9}>
@@ -189,7 +190,7 @@ export default function services() {
           <Container className="padding3">
             <Row className="center">
               <Col sm={4}>
-                <img src="/img/illustrations/questions.svg" alt="Questions" />
+                <img className="illust" src="/img/illustrations/questions.svg" alt="Questions" />
               </Col>
               <Col>
                 <div>
