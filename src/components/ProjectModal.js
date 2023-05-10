@@ -17,22 +17,31 @@ export default function ProjectModal({ show, onHide, projectData }) {
       <div className="project-modal-body">
         <Image src={projectData.image_url.length !== 0 ? projectData.image_url : "./img/square-pattern.svg"} fluid />
         <Modal.Body>
-          {/* Members section, empty if there's no tech lead */}
+          {/* Members section, empty if there's no member in that field */}
           {
             projectData.tech_lead.length !== 0 &&
               <section className="project-members">
-                <div>
-                  <span className="project-members-title">Tech Lead: </span>
-                  <span>{projectData.tech_lead}</span>
-                </div>
-                <div>
-                  <span className="project-members-title">Software Developer{projectData.sdes.length > 1 && 's'}: </span>
-                  <span>{projectData.sdes.join(', ')}</span>
-                </div>
-                <div>
-                  <span className="project-members-title">Business Developer{projectData.bizdevs.length > 1 && 's'}: </span>
-                  <span>{projectData.bizdevs.join(', ')}</span>
-                </div>
+                {
+                  projectData.tech_lead !== "" &&
+                    <div>
+                      <span className="project-members-title">Tech Lead: </span>
+                      <span>{projectData.tech_lead}</span>
+                    </div>
+                }
+                {
+                  projectData.sdes.length !== 0 &&
+                    <div>
+                      <span className="project-members-title">Software Developer{projectData.sdes.length > 1 && 's'}: </span>
+                      <span>{projectData.sdes.join(', ')}</span>
+                    </div>
+                }
+                {
+                  projectData.bizdevs.length !== 0 &&
+                    <div>
+                      <span className="project-members-title">Business Developer{projectData.bizdevs.length > 1 && 's'}: </span>
+                      <span>{projectData.bizdevs.join(', ')}</span>
+                    </div>
+                }
               </section>
           }
           {/* Description - New line per sentence */}
