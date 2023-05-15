@@ -1,14 +1,21 @@
 // Imports
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Source+Sans+Pro:300,400,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 
 // Variables
 $primary-font: "Montserrat", sans-serif;
 $secondary-font: "Source Sans Pro", sans-serif;
 $primary-color: #c82104;
 $primary-color-darker: #a30000;
+$primary-color-focus: #c8210446;
 $base-color: #000000;
+$muted-color: #696969;
 $red-gradient: linear-gradient(to right, #a30000, #f44708);
 $red-gradient-transparent: linear-gradient(to right, rgba(163, 0, 0, 0.75), rgba(244, 71, 8, 0.75));
+
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: 10%;
+}
 
 body {
 	font-family: $secondary-font;
@@ -101,11 +108,12 @@ a {
 		background-color: $primary-color-darker !important;
 		color: white !important;
 		border: none;
-		:focus {
-			background-color: $primary-color-darker !important;
-			color: white !important;
-			border: none;
-		}
+	}
+	&:focus {
+		background-color: $primary-color-darker !important;
+		color: white !important;
+		border: none;
+		box-shadow: 0 0 0 0.2rem $primary-color-focus !important;
 	}
 }
 
@@ -141,18 +149,28 @@ a {
 	}
 }
 
-@media (max-width: 414px) {
-	.footer-col {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		text-align: center;
-		margin-bottom: 10px;
+@media (max-width: 576px) {
+	.footer-row {
+		gap: 20px;
+		.footer-col {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+		}
 	}
 }
 
 .icon {
 	margin: 10px;
+}
+
+.illust {
+	max-width: 90%;
+}
+
+.company-logo {
+	max-width: 90%;
 }
 
 .thumbnail {
@@ -189,6 +207,13 @@ a {
 	text-align: center;
 }
 
+.center-column {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
 .center-top {
 	display: flex;
 	justify-content: center;
@@ -217,9 +242,9 @@ a {
 	padding-bottom: 10px;
 }
 
-img {
-	max-width: 90%;
-}
+// img {
+// 	max-width: 90%;
+// }
 
 .primary-font {
 	font-family: $primary-font;
@@ -434,4 +459,126 @@ img {
 
 .particlejs {
 	position: absolute;
+}
+
+// Projects page
+.year-title {
+	font-weight: 800;
+}
+
+.scroll-btns {
+	position: sticky;
+	top: 40px;
+	margin-top: 40px;
+	margin-left: 10%;
+	
+	@media (max-width: 1920px) {
+		margin-left: 5%;
+	}
+	
+	@media (max-width: 1556px) {
+		display: none;
+	}
+
+	height: 0px; // To not add too much spacing
+	width: 100px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+
+	.year-title {
+		margin-bottom: 0;
+	}
+
+	.year-btn {
+		font-weight: 700;
+		&:hover {
+			color: white;
+			background-color: $primary-color;
+		}
+		&:active {
+			color: white !important;
+			background-color: $primary-color-darker !important;
+		}
+	}
+}
+
+.project-card {
+	// Card position
+	margin: 15px 0;
+	box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+	color: $muted-color;
+
+	// Card styling
+	.card-img-top {
+		object-fit: cover;
+		height: 160px;
+		border-bottom: 1px solid rgba(0,0,0,0.25);
+	}
+
+	.card-title {
+		font-size: 1.5rem;
+	}
+
+	.card-subtitle {
+		margin-bottom: 1rem;
+	}
+
+	.card-text {
+		display: -webkit-box;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		word-wrap: break-word;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+	}
+
+	.read-more {
+		color: $primary-color;
+		font-weight: 600;
+		cursor: pointer;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+}
+
+// Modals
+.project-modal {
+	color: $muted-color;
+	.modal-header {
+		position: relative;
+		
+		.modal-title {
+			flex: 2;
+			text-align: center;
+		}
+
+		.close {
+			position: absolute;
+			top: 1rem;
+			right: 1rem;
+		}
+	}
+
+	.project-members {
+		padding-bottom: 1rem;
+		&-title {
+			font-weight: 700;
+		}
+	}
+
+	&-body {
+		display: flex;
+		flex-direction: column;
+		max-height: 444px;
+		overflow-y: scroll;
+	}
+
+	.project-description {
+		padding-top: 1rem;
+	}
 }

@@ -107,6 +107,7 @@ const about = () => {
             <Row className="center">
               <Col sm={4}>
                 <img
+                  className="illust"
                   src="/img/illustrations/people-chatting.svg"
                   alt="People chatting"
                 />

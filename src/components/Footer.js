@@ -15,7 +15,7 @@ export default function Footer() {
   return (
     <div className="footer">
       <Container className="padding3">
-        <Row>
+        <Row className="footer-row">
           <Col md={3} sm={12} className="footer-col">
             <div>
               <Row>
@@ -25,7 +25,7 @@ export default function Footer() {
               </Row>
               <Row className="margin-bottom2">
                 <Col>
-                  <p className="copyright">© 2020 BUILD UMass</p>
+                  <p className="copyright">© 2023 BUILD UMass</p>
                 </Col>
               </Row>
               <Row className="footer-col">
