@@ -19,13 +19,13 @@ export default function ProjectModal({ show, onHide, projectData }) {
         <Modal.Body>
           {/* Members section, empty if there's no member in that field */}
           {
-            projectData.tech_lead.length !== 0 &&
+            projectData.project_lead.length !== 0 &&
               <section className="project-members">
                 {
-                  projectData.tech_lead !== "" &&
+                  projectData.project_lead !== "" &&
                     <div>
-                      <span className="project-members-title">Tech Lead: </span>
-                      <span>{projectData.tech_lead}</span>
+                      <span className="project-members-title">Project Lead: </span>
+                      <span>{projectData.project_lead}</span>
                     </div>
                 }
                 {
@@ -36,10 +36,10 @@ export default function ProjectModal({ show, onHide, projectData }) {
                     </div>
                 }
                 {
-                  projectData.bizdevs.length !== 0 &&
+                  projectData.product_managers.length !== 0 &&
                     <div>
-                      <span className="project-members-title">Business Developer{projectData.bizdevs.length > 1 && 's'}: </span>
-                      <span>{projectData.bizdevs.join(', ')}</span>
+                      <span className="project-members-title">Product Manager{projectData.product_managers.length > 1 && 's'}: </span>
+                      <span>{projectData.product_managers.join(', ')}</span>
                     </div>
                 }
               </section>
