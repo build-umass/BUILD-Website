@@ -4,7 +4,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 
@@ -49,7 +48,7 @@ export default function projects() {
       <div className="scroll-btns">
         {
           projectDatabase.map((projectList) => (
-            <Button variant="light" className="year-btn" size="lg" href={`#${projectList.year}`}>
+            <Button variant="light" className="year-btn" size="lg" href={`#${projectList.year}`} key={`projectyearbutton-${projectList.year}`}>
               {projectList.year}
             </Button>
           ))
@@ -58,12 +57,12 @@ export default function projects() {
       <Container fluid="xl">
         {
           projectDatabase.map((projectList) => (
-            <div id={`${projectList.year}`} className="margin3 center-column">
+            <div id={`${projectList.year}`} className="margin3 center-column" key={`projectyear-${projectList.year}`}>
               <h2 className="year-title margin-bottom3">{projectList.year}</h2>
               <Row>
                 {
                   projectList.projects.map((project) => (
-                    <Col xs={12} sm={6} md={6} lg={4}>
+                    <Col xs={12} sm={6} md={6} lg={4} key={`project-${project.title}`}>
                       <ProjectCard projectData={project} />
                     </Col>
                   ))
