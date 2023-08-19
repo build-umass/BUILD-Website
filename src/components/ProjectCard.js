@@ -13,10 +13,10 @@ export default function ProjectCard({ projectData }) {
   }, [projectData.description]);
 
   // Counting the member
-  const techLeadCount = projectData.tech_lead.length !== 0 ? 1 : 0;
+  const projectLeadCount = projectData.project_lead.length !== 0 ? 1 : 0;
   const sdesCount = projectData.sdes.length;
-  const bizdevsCount = projectData.bizdevs.length;
-  const membersCount = techLeadCount + sdesCount + bizdevsCount;
+  const productManagersCount = projectData.product_managers.length;
+  const membersCount = projectLeadCount + sdesCount + productManagersCount;
 
   return (
     <Card className="project-card">

@@ -3,15 +3,30 @@
     "year": "2023",
     "projects": [
       {
+        "title": "Small Acts for Sustainability",
+        "project_lead": "Paul Davis",
+        "sdes": [
+          "Vi Doan", 
+          "Anshul Saha", 
+          "Abby Tran"
+        ],
+        "product_managers": [
+          "Anisha Goyal", 
+          "Anha Mehta"
+        ],
+        "description": "Small Acts for Sustainability (SAS) is an Amherst-based nonprofit that does work in rural India to support women's health. SAS approached us to create a period-tracking app that supports the tracking and logging of menstrual cycle symptoms over time. The app is translated into English, Kannada and Hindi and is currently in a closed testing period as of our last handoff to SAS with the ultimate goal of publishing it on the Google Play and Apple storefronts.",
+        "image_url": "/img/projects/SAS_S23.png"
+      },
+      {
         "title": "MassPirg",
-        "tech_lead": "Thinh Nguyen",
+        "project_lead": "Thinh Nguyen",
         "sdes": [
           "Aryan Nair", 
           "Simran Lekhwani", 
           "Rohan Raghuram", 
           "Shoubhit Ravi"
         ],
-        "bizdevs": [
+        "product_managers": [
           "Khanh Ngoc Nam Hyunh", 
           "Sabrina Liu"
         ],
@@ -20,14 +35,14 @@
       },
       {
         "title": "IUCG",
-        "tech_lead": "Benjamin Fenelson",
+        "project_lead": "Benjamin Fenelson",
         "sdes": [
           "Bennett Gillig",
           "Thomas Ji",
           "Yiming Yuan",
           "Aditya Maheshwari"
         ],
-        "bizdevs": [
+        "product_managers": [
           "Cynthia Rajeshkanna", 
           "Tiffany Nguyen"
         ],
@@ -36,14 +51,14 @@
       },
       {
         "title": "AiS",
-        "tech_lead": "Ananya Shekhawat",
+        "project_lead": "Ananya Shekhawat",
         "sdes": [
           "Eric Fournier", 
           "Yongye Tan", 
           "Adam Smith", 
           "Shoubhit Ravi"
         ],
-        "bizdevs": [
+        "product_managers": [
           "Hallie Liu", 
           "Vishwesh Palani"
         ],
@@ -52,7 +67,7 @@
       },
       {
         "title": "UMass Fitness and Nutrition",
-        "tech_lead": "Jiaqi (Jay) Ye",
+        "project_lead": "Jiaqi (Jay) Ye",
         "sdes": [
           "Nicole Kaldus",
           "Khushi Rajoria",
@@ -60,7 +75,7 @@
           "Aditi Bansal",
           "Eric Wu"
         ],
-        "bizdevs": [
+        "product_managers": [
           "Christopher Setiawan"
         ],
         "description": "UMass Fitness and Nutrition is a newly founded club at UMass focused around eating healthy and exercising regularly. The club's goal is to promote healthy lifestyles that can be achieved even as a full time college student.",
@@ -68,7 +83,7 @@
       },
       {
         "title": "Upward Bound",
-        "tech_lead": "Justin Baltazar",
+        "project_lead": "Justin Baltazar",
         "sdes": [
           "Quang Dang",
           "Vani Gupta",
@@ -77,7 +92,7 @@
           "Ishaan Shetty",
           "Limbani George Chaponda"
         ],
-        "bizdevs": [
+        "product_managers": [
           "Taru Meshram",
           "Erica Phan"
         ],
@@ -91,25 +106,25 @@
     "projects": [
       {
         "title": "Phenom",
-        "tech_lead": "",
+        "project_lead": "",
         "sdes": [],
-        "bizdevs": [],
+        "product_managers": [],
         "description": "The Public Higher Education Network of Massachusetts (PHENOM) unites students, families, alumni, professors, staff, and community members from our state universities, community colleges and the UMass system to advocate for high-quality, debt-free public college.",
         "image_url": "/img/projects/Phenom_S22.png"
       },
       {
         "title": "Student Bridges",
-        "tech_lead": "",
+        "project_lead": "",
         "sdes": [],
-        "bizdevs": [],
+        "product_managers": [],
         "description": "Student Bridges is a non-profit, student run agency that works to improve access and success for underrepresented students.",
         "image_url": "/img/projects/StudentBridges_S22.png"
       },
       {
         "title": "Lobstermen",
-        "tech_lead": "",
+        "project_lead": "",
         "sdes": [],
-        "bizdevs": [],
+        "product_managers": [],
         "description": "The Massachusetts Lobstermen's Association was established in 1963 by the fishermen, for the fishermen, and is presently one of the leading commercial fishing industry associations in New England. On behalf of the 1,800 members, the MLA works to maintain both the industry and the resource. The MLA strives to be proactive on issues affecting the lobster industry and is active in the management process at both the state and federal levels. The MLA communicates with its members through a monthly newspaper, weekly email, Facebook, and attendance at industry meetings. For the past 60 years, the MLA has become a trustworthy voice for the industry on important issues, and is looked to by both the fishing industry and the management community.",
         "image_url": "/img/projects/Lobstermen_S22.png"
       }
