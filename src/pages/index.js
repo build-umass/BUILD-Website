@@ -167,7 +167,7 @@ export default function Index() {
                   </Row>
                   <Row>
                     <Col>
-                      <p className="stats-number">35+</p>
+                      <p className="stats-number">60+</p>
                     </Col>
                   </Row>
                   <Row>
