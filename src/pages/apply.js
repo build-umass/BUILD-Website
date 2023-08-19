@@ -53,6 +53,7 @@ export default function apply() {
           <Row className="margin-bottom4">
             <Col>
               <h1>Roles at BUILD</h1>
+              <p>Keep an eye out for applications for Fall 2023 opening in early September!</p>
             </Col>
           </Row>
           <Row className="center">
@@ -60,10 +61,11 @@ export default function apply() {
               <Card body className="margin-bottom3">
                 <h5>Software Developer</h5>
                 <p>
-                  Work in small teams to build software for small organizations
-                  that don’t have the resources to do so themselves. Developers
-                  have a wide range of experience and interest. Get the chance
-                  to learn and teach others.
+                  Works closely with a team of developers to make the product vision a reality.
+                  You{"'"}ll collaborate on code, review team members{"'"} work, and translate
+                  client objectives into a usable product. Taking ownership of specific product
+                  features, software engineers ensure smooth feature integration and deliver
+                  exceptional solutions.
                 </p>
                 <div className="center">
                   <Button
@@ -79,12 +81,15 @@ export default function apply() {
             </Col>
             <Col sm={4}>
               <Card body className="margin-bottom3">
-                <h5>Business Developer</h5>
+                <h5>Product Manager</h5>
                 <p>
-                  Communicates with clients and the software team to deliver a
-                  product that suits the needs of the client. Developers bring
-                  in perspective of companies and clients and proactively engage
-                  in project acquisitions.
+                  Identifies client needs and larger business objectives that a product
+                  or feature will fulfill, articulates what success looks like for the product,
+                  and rallies a team to turn that vision into a reality by working with the
+                  Project Lead to plan and introduce new features,establish timelines, and
+                  manage client relations.
+                  <br />
+                  &nbsp;
                 </p>
                 <div className="center">
                   <Button
