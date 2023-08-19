@@ -53,6 +53,7 @@ export default function apply() {
           <Row className="margin-bottom4">
             <Col>
               <h1>Roles at BUILD</h1>
+              <p>Keep an eye out for applications for Fall 2023 opening in early September!</p>
             </Col>
           </Row>
           <Row className="center">
