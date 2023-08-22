@@ -10,6 +10,7 @@ $primary-color-focus: #c8210446;
 $base-color: #000000;
 $muted-color: #696969;
 $red-gradient: linear-gradient(to right, #a30000, #f44708);
+$light-red-gradient: linear-gradient(to right, #c82104, #f44708);
 $red-gradient-transparent: linear-gradient(to right, rgba(163, 0, 0, 0.75), rgba(244, 71, 8, 0.75));
 
 html {
@@ -91,6 +92,103 @@ a {
 			background-color: white !important;
 			color: $base-color !important;
 			border: none;
+		}
+	}
+}
+
+.card-text {
+	text-wrap: balance;
+}
+
+.apply-btn {
+	position: relative;
+	height: calc(1.5rem + 0.5rem * 2);
+	width: 100%;
+	font-weight: 700;
+	padding: 0.5rem 0.75rem;
+	border-radius: 4px;
+	background: $primary-color;
+	transition-delay: 0.6s;
+	overflow: hidden;
+
+	// cool smooth looking hover effect
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: $primary-color;
+		border-radius: 0;
+		transform: translateY(0) scaleY(1);
+		transition: all 0.6s ease;
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: #f44708;
+		border-radius: 50% 50% 0 0;
+		transform: translateY(100%) scaleY(0.6);
+		transition: all 0.6s ease;
+	}
+
+	div {
+		position: relative;
+		left: 0px;
+		width: 100%;
+		height: calc(1rem + 0.475rem);
+		overflow: hidden;
+	}
+
+	span {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 1;
+		transition: transform 0.6s ease;
+
+		&:first-child {
+			color: white;
+			transform: translateY(0px);
+		}
+		&:last-child {
+			color: white;
+			transform: translateY(1.5rem);
+		}
+	}
+
+  &:hover {
+    background: #f44708;
+    transition: background 0.1s linear;
+    transition-delay: 0.6s;
+		cursor: pointer;
+
+    &::before {
+      border-radius: 0 0 50% 50%;
+      transform: translateY(-100%) scaleY(.5);
+      transition-delay: 0;
+		}
+
+    &::after {
+      border-radius: 0;
+      transform: translateY(0) scaleY(1);
+      transition-delay: 0;
+		}
+
+    span {
+      &:first-child {
+        transform: translateY(-1.5rem);
+			}
+      &:last-child {
+        transform: translateY(0px);
+			}
 		}
 	}
 }
@@ -506,11 +604,12 @@ a {
 
 .project-card {
 	// Card position
-	margin: 15px 0;
 	box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
 	color: $muted-color;
 
 	// Card styling
+	height: 100%;
+
 	.card-img-top {
 		object-fit: cover;
 		height: 160px;
@@ -530,11 +629,19 @@ a {
 		overflow: hidden;
 		text-overflow: ellipsis;
 		word-wrap: break-word;
-    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
 	}
 
+	.three-lines {
+		-webkit-line-clamp: 3;
+	}
+
+	.four-lines {
+		-webkit-line-clamp: 4;
+	}
+
 	.read-more {
+		margin-top: 12px;
 		color: $primary-color;
 		font-weight: 600;
 		cursor: pointer;
@@ -575,7 +682,7 @@ a {
 		display: flex;
 		flex-direction: column;
 		max-height: 444px;
-		overflow-y: scroll;
+		overflow-y: auto;
 	}
 
 	.project-description {

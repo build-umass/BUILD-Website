@@ -53,53 +53,59 @@ export default function apply() {
           <Row className="margin-bottom4">
             <Col>
               <h1>Roles at BUILD</h1>
-              <p>Keep an eye out for applications for Fall 2023 opening in early September!</p>
+              <p>*Fall 2023 application process starts on August 31st!</p>
             </Col>
           </Row>
           <Row className="center">
             <Col sm={4}>
-              <Card body className="margin-bottom3">
-                <h5>Software Developer</h5>
-                <p>
+              <Card body>
+                <Card.Title className="mb-3"><h4>Software Developer</h4></Card.Title>
+                <Card.Text>
                   Works closely with a team of developers to make the product vision a reality.
-                  You{"'"}ll collaborate on code, review team members{"'"} work, and translate
+                  You'll collaborate on code, review team members' work, and translate
                   client objectives into a usable product. Taking ownership of specific product
                   features, software engineers ensure smooth feature integration and deliver
                   exceptional solutions.
-                </p>
+                </Card.Text>
                 <div className="center">
-                  <Button
-                    className="color"
+                  <div
+                    className="apply-btn"
                     onClick={() => {
-                      window.open('https://forms.gle/aDc2DNJSRGDsViUk9');
+                      window.open('https://forms.gle/WxHqBnCKyVMdTAcJ7');
                     }}
                   >
-                    Apply
-                  </Button>
+                    <div>
+                      <span>Apply</span>
+                      <span>Apply</span>
+                    </div>
+                  </div>
                 </div>
               </Card>
             </Col>
             <Col sm={4}>
-              <Card body className="margin-bottom3">
-                <h5>Product Manager</h5>
-                <p>
+              <Card body>
+                <Card.Title className="mp-3"><h4>Product Manager</h4></Card.Title>
+                <Card.Text>
                   Identifies client needs and larger business objectives that a product
                   or feature will fulfill, articulates what success looks like for the product,
                   and rallies a team to turn that vision into a reality by working with the
-                  Project Lead to plan and introduce new features,establish timelines, and
+                  Project Lead to plan and introduce new features, establish timelines, and
                   manage client relations.
                   <br />
                   &nbsp;
-                </p>
+                </Card.Text>
                 <div className="center">
-                  <Button
-                    className="color"
+                  <div
+                    className="apply-btn"
                     onClick={() => {
-                      window.open('https://forms.gle/oYuxNHdmfoMT8KxH7');
+                      window.open('https://forms.gle/XicoFnRMEUkTr6CHA');
                     }}
                   >
-                    Apply
-                  </Button>
+                    <div>
+                      <span>Apply</span>
+                      <span>Apply</span>
+                    </div>
+                  </div>
                 </div>
               </Card>
             </Col>
@@ -133,7 +139,7 @@ export default function apply() {
                   className="thumbnail"
                   alt="Teamwork"
                 />
-                <h6>Teamwork</h6>
+                <h5>Teamwork</h5>
                 <p className="light">
                   Do you display the ability to work well in a team?
                 </p>
@@ -146,7 +152,7 @@ export default function apply() {
                   className="thumbnail"
                   alt="Passion"
                 />
-                <h6>Passion</h6>
+                <h5>Passion</h5>
                 <p className="light">
                   Do you demonstrate a genuine passion for social good?
                 </p>
@@ -161,7 +167,7 @@ export default function apply() {
                   className="thumbnail"
                   alt="Growth"
                 />
-                <h6>Growth</h6>
+                <h5>Growth</h5>
                 <p className="light">
                   Do you push yourself to grow in any setting? Do you seek out
                   new ways to grow?
@@ -175,7 +181,7 @@ export default function apply() {
                   className="thumbnail"
                   alt="Culture"
                 />
-                <h6>Culture</h6>
+                <h5>Culture</h5>
                 <p className="light">
                   Do you value empowering non-profits to achieve their missions
                   through tech?

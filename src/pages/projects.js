@@ -62,7 +62,7 @@ export default function projects() {
               <Row>
                 {
                   projectList.projects.map((project) => (
-                    <Col xs={12} sm={6} md={6} lg={4} key={`project-${project.title}`}>
+                    <Col xs={12} sm={6} md={6} lg={4} key={`project-${project.title}`} className="mb-4">
                       <ProjectCard projectData={project} />
                     </Col>
                   ))
