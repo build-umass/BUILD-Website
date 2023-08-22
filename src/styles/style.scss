@@ -43,13 +43,30 @@ h6 {
 	color: white !important;
 }
 
+.nav-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0px 8px 0px 8px;
+	padding-right: .5rem;
+	padding-left: .5rem;
+	a {
+		font-family: $primary-font;
+		color: white;
+
+		&:hover {
+			color: white;
+			text-decoration: underline;
+		}
+	}
+}
+
 .navbar-brand {
 	font-weight: 700;
 }
 
 .nav-link {
-	margin-left: 8px;
-	margin-right: 8px;
+	margin: 0px 8px 0px 8px;
 	&:hover {
 		text-decoration: underline;
 	}

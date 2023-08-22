@@ -21,11 +21,11 @@ export default function Index() {
             className="justify-content-end"
           >
             <Nav className="ml-auto">
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/about">About</Nav.Link>
-              <Nav.Link href="/services">Services</Nav.Link>
-              <Nav.Link href="/projects">Projects</Nav.Link>
-              <Nav.Link href="/apply">Apply</Nav.Link>
+              <Nav.Item><Link href="/">Home</Link></Nav.Item>
+              <Nav.Item><Link href="/about">About</Link></Nav.Item>
+              <Nav.Item><Link href="/services">Services</Link></Nav.Item>
+              <Nav.Item><Link href="/projects">Projects</Link></Nav.Item>
+              <Nav.Item><Link href="/apply">Apply</Link></Nav.Item>
               <Nav.Link
                 // Todo: Connect with Cheerio
                 // href="/contact"

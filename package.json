@@ -25,8 +25,12 @@
   },
   "homepage": "https://github.com/build-umass/BUILD-Website#readme",
   "dependencies": {
+    "eslint-config-next": "^13.4.19",
     "firebase": "^8.9.1",
-    "firebase-tools": "^8.9.2"
+    "firebase-tools": "^8.9.2",
+    "next": "^13.4.19",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
