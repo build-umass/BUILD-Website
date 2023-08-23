@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -39,14 +40,14 @@ const about = () => {
                   </Row>
                   <Row>
                     <Col className="center">
-                      <Button
-                        className="btn-light"
-                        onClick={() => {
-                          window.open('/apply', '_self');
-                        }}
-                      >
-                        Join Us!
-                      </Button>
+                      <Link href="/apply">
+                        <Button
+                          variant="light"
+                          className="link-btn"
+                        >
+                          Join Us!
+                        </Button>
+                      </Link>
                     </Col>
                   </Row>
                 </div>
@@ -133,7 +134,11 @@ const about = () => {
                   </Row>
                   <Row>
                     <Col className="center">
-                      <Button href="/apply">Apply!</Button>
+                      <Link href="/apply">
+                        <Button variant="light" className="link-btn">
+                          Apply!
+                        </Button>
+                      </Link>
                     </Col>
                   </Row>
                 </div>
