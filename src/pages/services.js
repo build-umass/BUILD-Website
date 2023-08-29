@@ -16,11 +16,11 @@ export default function services() {
         <Navbar />
         {/* Landing Jumbotron */}
         <Container className="center">
-          <Row className="padding5">
+          <Row className="padding5 align-items-center">
             <Col sm={5}>
               <img className="illust" src="/img/hello-world.gif" alt="Hello World" />
             </Col>
-            <Col>
+            <Col className="mt-3 mt-sm-0">
               <div>
                 <Row>
                   <Col>

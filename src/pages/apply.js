@@ -57,7 +57,7 @@ export default function apply() {
             </Col>
           </Row>
           <Row className="center">
-            <Col sm={4}>
+            <Col md={4}>
               <Card body>
                 <Card.Title className="mb-3"><h4>Software Developer</h4></Card.Title>
                 <Card.Text>
@@ -82,7 +82,7 @@ export default function apply() {
                 </div>
               </Card>
             </Col>
-            <Col sm={4}>
+            <Col md={4} className="mt-4 mt-md-0">
               <Card body>
                 <Card.Title className="mp-3"><h4>Product Manager</h4></Card.Title>
                 <Card.Text>

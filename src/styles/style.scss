@@ -34,6 +34,12 @@ h6 {
 	color: $primary-color;
 }
 
+h1 {
+	@media (max-width: 576px) {
+		font-size: 1.75rem;
+	}
+}
+
 .navbar {
 	padding: 20px;
 
@@ -348,6 +354,10 @@ a {
 
 .illust {
 	max-width: 90%;
+
+	@media (max-width: 575px) {
+		margin-bottom: 64px;
+	}
 }
 
 .company-logo {
@@ -370,6 +380,12 @@ a {
 .light {
 	// font-size: 16px;
 	color: rgba($color: $base-color, $alpha: 0.65);
+}
+
+.gap-3 {
+	@media (max-width: 576px) {
+		gap: 32px;
+	}
 }
 
 .copyright {
@@ -594,13 +610,25 @@ a {
 	font-family: $primary-font;
 	color: white;
 	margin-bottom: 0px;
+
+	@media (max-width: 992px) {
+		font-size: 3rem;
+	}
+
+	@media (max-width: 576px) {
+		font-size: 2.5rem;
+	}
 }
 
 .stats-base {
-	font-size: 30px;
+	font-size: 2rem;
 	font-weight: 500;
 	font-family: $primary-font;
 	color: white;
+
+	@media (max-width: 992px) {
+		font-size: 1.5rem;
+	}
 }
 
 .stats-icon {

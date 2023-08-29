@@ -105,7 +105,7 @@ export default function Index() {
               <Col>
                 <div className="center">
                   <img
-                    className="illust"
+                    className="illust mt-5 mt-sm-0 mb-0"
                     src="/img/illustrations/about.svg"
                     alt="About Illustration"
                   />
@@ -146,7 +146,7 @@ export default function Index() {
               </Col>
               <Col>
                 <div className="center">
-                  <img className="illust" src="/img/illustrations/services.svg" alt="Services" />
+                  <img className="illust mt-5 mt-sm-0 mb-0" src="/img/illustrations/services.svg" alt="Services" />
                 </div>
               </Col>
             </Row>
@@ -162,7 +162,7 @@ export default function Index() {
                 <h1 className="stats-title">Some fun facts</h1>
               </Col>
             </Row>
-            <Row>
+            <Row className="mt-4 mt-lg-2 gap-3">
               <Col>
                 <div>
                   <Row>
