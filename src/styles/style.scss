@@ -33,14 +33,25 @@ h6 {
 	font-weight: 700;
 	color: $primary-color;
 }
+
 .navbar {
 	padding: 20px;
+
+	&-nav {
+		@media (max-width: 992px) {
+			margin-top: 8px;
+		}
+	}
 }
 
 .navbar-brand,
 .nav-link {
 	font-family: $primary-font;
 	color: white !important;
+
+	@media (max-width: 992px) {
+		text-align: right;
+	}
 }
 
 .nav-item {
@@ -50,6 +61,7 @@ h6 {
 	margin: 0px 8px 0px 8px;
 	padding-right: .5rem;
 	padding-left: .5rem;
+
 	a {
 		font-family: $primary-font;
 		text-decoration: none;
@@ -59,6 +71,11 @@ h6 {
 			color: white;
 			text-decoration: underline;
 		}
+	}
+
+	@media (max-width: 992px) {
+		justify-content: right;
+		padding: 0.5rem 0rem;
 	}
 }
 
