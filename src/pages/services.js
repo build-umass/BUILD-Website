@@ -41,7 +41,8 @@ export default function services() {
                 <Row>
                   <Col className="center">
                     <Button
-                      className="btn-light"
+                      variant="light"
+                      className="link-btn"
                       onClick={() => {
                         // window.open('/contact', '_self');
                         window.open(
@@ -212,6 +213,8 @@ export default function services() {
                   <Row>
                     <Col className="center">
                       <Button
+                        variant="light"
+                        className="link-btn"
                         onClick={() => {
                           // window.open('/contact', '_self');
                           window.open(

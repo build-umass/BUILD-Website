@@ -1,10 +1,10 @@
 // Imports
 import React from 'react';
+import Link from 'next/link';
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Link from 'react-bootstrap/NavLink';
 import Button from 'react-bootstrap/Button';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -51,7 +51,8 @@ export default function Index() {
                 <Row>
                   <Col className="center">
                     <Button
-                      className="btn-light"
+                      className="link-btn"
+                      variant="light"
                       onClick={() => {
                         // window.open('/contact', '_self');
                         window.open(
@@ -92,8 +93,10 @@ export default function Index() {
                   </Row>
                   <Row>
                     <Col>
-                      <Link className="inline-link" href="/about">
-                        Learn more <FontAwesomeIcon icon={faChevronRight} />
+                      <Link href="/about">
+                        <div className="inline-link">
+                          Learn more <FontAwesomeIcon icon={faChevronRight} />
+                        </div>
                       </Link>
                     </Col>
                   </Row>
@@ -132,8 +135,10 @@ export default function Index() {
                   </Row>
                   <Row>
                     <Col>
-                      <Link className="inline-link" href="/services">
-                        Learn more <FontAwesomeIcon icon={faChevronRight} />
+                      <Link href="/services">
+                        <div className="inline-link">
+                          Learn more <FontAwesomeIcon icon={faChevronRight} />
+                        </div>
                       </Link>
                     </Col>
                   </Row>
@@ -208,7 +213,7 @@ export default function Index() {
                   </Row>
                   <Row>
                     <Col>
-                      <p className="stats-number">8</p>
+                      <p className="stats-number">10+</p>
                     </Col>
                   </Row>
                   <Row>
@@ -263,8 +268,10 @@ export default function Index() {
           </Row>
           <Row>
             <Col>
-              <Link className="inline-link" href="/apply">
-                Learn more <FontAwesomeIcon icon={faChevronRight} />
+              <Link href="/apply">
+                <div className="inline-link">
+                  Learn more <FontAwesomeIcon icon={faChevronRight} />
+                </div>
               </Link>
             </Col>
           </Row>
@@ -279,7 +286,7 @@ export default function Index() {
           <Row>
             <Col>
               <p className="desc">
-                Our members are brilliant students and professionals and often
+                Our members are brilliant students and professionals who
                 end up working for the best companies in the industry.
               </p>
             </Col>
