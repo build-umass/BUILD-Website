@@ -356,7 +356,7 @@ a {
 	max-width: 90%;
 
 	@media (max-width: 575px) {
-		margin-bottom: 64px;
+		margin-bottom: 48px;
 	}
 }
 
@@ -560,7 +560,15 @@ a {
 
 .sq-bg {
 	background: url("../public/img/square-pattern.svg");
-	background-size: cover;
+	background-size: 100%;
+
+	@media (max-width: 992px) {
+		background-size: 200%;
+	}
+
+	@media (max-width: 576px) {
+		background-size: 300%;
+	}
 }
 
 .pg-heading {
