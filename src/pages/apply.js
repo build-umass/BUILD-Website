@@ -3,7 +3,6 @@ import Particles from 'react-particles-js';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
 import Footer from '../components/Footer';
@@ -53,7 +52,7 @@ export default function apply() {
           <Row className="margin-bottom4">
             <Col>
               <h1>Roles at BUILD</h1>
-              <p>*Fall 2023 application has been closed. We appreciate everyone for applying! Please look out for more updates in the spring semester!</p>
+              <p>Spring 2024 applications are now open. Please by Thursday, February 8th!</p>
             </Col>
           </Row>
           <Row className="center">
@@ -71,7 +70,7 @@ export default function apply() {
                   <div
                     className="apply-btn"
                     onClick={() => {
-                      window.open('https://forms.gle/WxHqBnCKyVMdTAcJ7');
+                      window.open('https://forms.gle/nZR43PcqQNQbgtCg8');
                     }}
                   >
                     <div>
@@ -98,7 +97,7 @@ export default function apply() {
                   <div
                     className="apply-btn"
                     onClick={() => {
-                      window.open('https://forms.gle/XicoFnRMEUkTr6CHA');
+                      window.open('https://forms.gle/hjPdzXopGWTWJY4m8');
                     }}
                   >
                     <div>
