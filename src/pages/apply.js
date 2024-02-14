@@ -3,7 +3,7 @@ import Particles from 'react-particles-js';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card';
+import ApplicationCard from '../components/ApplicationCard.tsx';
 
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
@@ -12,9 +12,7 @@ import ParticleJSConfig from '../styles/particlejs_config.json';
 
 export default function apply() {
 
-  const apply = (link) => {
-    window.open(link, '_blank');
-  }
+  const APPLICATIONS_OPEN = false;
 
   const roles = [
     {
@@ -50,7 +48,7 @@ export default function apply() {
                 <Row>
                   <Col>
                     <p className="pg-heading center">
-                      BUILD is on the lookout for passionate and talented individuals who are eager to make a difference in our community. Are you interested in applying what you have been learning in class to real-world projects in a dynamic team environment? If so, we want to hear from you!
+                      BUILD is on the lookout for passionate and talented individuals who are eager to make a difference in our community. Are you interested in applying what you have been learning in class to real-world projects in a dynamic team environment? If so, consider applying!
                     </p>
                   </Col>
                 </Row>
@@ -64,7 +62,9 @@ export default function apply() {
         <div className="padding2" id="Roles">
           <Row className="margin-bottom4">
             <Col>
-              <h1>Roles at BUILD</h1>
+              <h1>
+                Roles at BUILD
+              </h1>
               <p>
                 The application window for spring 2024 has closed. Please check back in the fall for more opportunities to join our team.
               </p>
@@ -73,23 +73,14 @@ export default function apply() {
           <Row>
             { roles.map((role, index) => (
                 <Col key={index}>
-                  <Card body>
-                    <Card.Title className="mb-3"><h4>{role.title}</h4></Card.Title>
-                    <Card.Text>
-                      {role.description}
-                    </Card.Text>
-                    {/* <div className="center">
-                      <div
-                        className="apply-btn"
-                        onClick={() => apply(role.applicationLink)}
-                      >
-                        <div>
-                          <span>Apply</span>
-                          <span>Apply</span>
-                        </div>
-                      </div>
-                    </div> */}
-                  </Card>
+                  <div style={{ height: APPLICATIONS_OPEN ? '250px' : '200px' }}>
+                    <ApplicationCard
+                      title={role.title}
+                      description={role.description}
+                      applicationLink={role.applicationLink}
+                      applicationOpen={APPLICATIONS_OPEN}
+                    />
+                  </div>
                 </Col>
             ))}
           </Row>
@@ -97,7 +88,9 @@ export default function apply() {
         <div className="margin5">
           <Row className="margin-bottom4">
             <Col>
-              <h1>What we look for</h1>
+              <h1>
+                What we look for
+              </h1>
             </Col>
           </Row>
           <Row className="center margin-bottom5">
@@ -174,7 +167,7 @@ export default function apply() {
               <Row>
                 <Col>
                   <p>
-                    To make the most of your experience, and to ensure that our teams are able to deliver high-quality products, we expect students taking part in BUILD to contribute a minimum of 2 hours per week.
+                    We expect members to contribute a minimum of 2 hours per week. We take it easy during exam weeks.
                   </p>
                 </Col>
               </Row>
@@ -203,7 +196,7 @@ export default function apply() {
                 <Col>
                   <p>
                     BUILD is open to all years and majors. We do expect
-                    software developers to be familiar with rudimentary data structures and programming methodologies.
+                    software developers to be familiar with basic data structures and programming methodologies.
                   </p>
                 </Col>
               </Row>
