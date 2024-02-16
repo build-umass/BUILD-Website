@@ -10,12 +10,12 @@ export default function CompanyLogos() {
       src: 'msft.svg',
     },
     {
-      name: 'Facebook',
-      src: 'fb.svg',
+      name: 'Meta',
+      src: 'meta.png',
     },
     {
       name: 'Google',
-      src: 'goog.svg',
+      src: 'google.svg',
     },
     {
       name: 'Amazon',
@@ -62,7 +62,7 @@ export default function CompanyLogos() {
       src: 'liberty-mutual.png',
     },
     {
-      name: 'Blue Cross',
+      name: 'Blue Cross Blue Shield',
       src: 'blue-cross-blue-shield.png',
     },
   ];
