@@ -1,18 +1,10 @@
-import React from 'react';
-
-export type ApplicationCardProps = {
-  title: string;
-  description: string;
-  applicationLink: string;
-  applicationOpen: boolean;
-}
 
 export default function ApplicationCard ({
   title,
   description,
   applicationLink,
   applicationOpen
-}: ApplicationCardProps) {
+}) {
 
   const apply = (applicationLink) => {
     window.open(applicationLink, "_blank");

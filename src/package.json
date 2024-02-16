@@ -14,8 +14,6 @@
     "@fortawesome/free-regular-svg-icons": "^5.12.1",
     "@fortawesome/free-solid-svg-icons": "^5.12.1",
     "@fortawesome/react-fontawesome": "^0.1.9",
-    "@types/react": "^18.2.55",
-    "@types/react-dom": "^18.2.19",
     "bootstrap": "^4.4.1",
     "firebase-tools": "^7.15.1",
     "jquery": "^3.4.0",

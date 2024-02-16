@@ -3,7 +3,7 @@ import Particles from 'react-particles-js';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import ApplicationCard from '../components/ApplicationCard.tsx';
+import ApplicationCard from '../components/ApplicationCard.jsx';
 
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
