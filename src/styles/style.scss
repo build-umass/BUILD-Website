@@ -447,6 +447,7 @@ a {
 	font-family: $primary-font;
 }
 
+// WTF! - sincerely, yona
 .padding1 {
 	padding-top: 20px;
 	padding-bottom: 40px;
@@ -698,11 +699,11 @@ a {
 	top: 40px;
 	margin-top: 40px;
 	margin-left: 10%;
-	
+
 	@media (max-width: 1920px) {
 		margin-left: 5%;
 	}
-	
+
 	@media (max-width: 1556px) {
 		display: none;
 	}
@@ -787,7 +788,7 @@ a {
 	color: $muted-color;
 	.modal-header {
 		position: relative;
-		
+
 		.modal-title {
 			flex: 2;
 			text-align: center;

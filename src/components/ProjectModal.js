@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image';
@@ -47,7 +47,7 @@ export default function ProjectModal({ show, onHide, projectData }) {
           {/* Description - New line per sentence */}
           <section className="project-description">
             {
-              projectData.description.split('. ').map((sentences, index, array) => 
+              projectData.description.split('. ').map((sentences, index, array) =>
                 <p>{sentences}{(index !== array.length - 1) && '.'}</p>
               )
             }

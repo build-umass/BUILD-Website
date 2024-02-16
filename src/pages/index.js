@@ -6,6 +6,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
+import CompanyLogos from '../components/CompanyLogos';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -292,56 +293,7 @@ export default function Index() {
             </Col>
           </Row>
           <Row className="center">
-            {/* Map over logos */}
-            <Col md={4} className="center space">
-              <img className="company-logo" src="img/logo/msft.svg" alt="MSFT" />
-            </Col>
-            <Col md={4} className="center space">
-              <img className="company-logo" src="img/logo/fb.svg" alt="FB" />
-            </Col>
-            <Col md={4} className="center space">
-              <img className="company-logo" src="img/logo/goog.svg" alt="GOOG" />
-            </Col>
-            <Col md={4} className="center space">
-              <img className="company-logo" src="img/logo/Amazon_logo.svg" alt="AMZN" />
-            </Col>
-            <Col md={4} className="center space">
-              <img className="company-logo" src="img/logo/uber.svg" className="logo" alt="UBER" />
-            </Col>
-            <Col md={4} className="center space">
-              <img className="company-logo" src="img/logo/cisco.svg" className="logo" alt="CSCO" />
-            </Col>
-            <Col md={4} className="center space">
-              <img className="company-logo" src="img/logo/visa.png" className="logo" alt="V" />
-            </Col>
-            <Col md={4} className="center space">
-              <img className="company-logo" src="img/logo/mastercard.svg" alt="MA" />
-            </Col>
-            <Col md={4} className="center space">
-              <img className="company-logo" src="img/logo/fidelity.svg" alt="Fidelity" />
-            </Col>
-            <Col md={4} className="center space ">
-              <img className="company-logo" src="img/logo/pratt-whitney.svg" alt="Pratt and Whitney" />
-            </Col>
-            <Col md={4} className="center space">
-              <img className="company-logo" src="img/logo/dell.png" className="logo" alt="DELL" />
-            </Col>
-            <Col md={4} className="center space">
-              <img className="company-logo" src="img/logo/massmutual.svg" alt="MassMutual" />
-            </Col>
-            <Col md={4} className="center space">
-              <img
-                src="img/logo/liberty-mutual.png"
-                className="logo"
-                alt="Liberty Mutual"
-              />
-            </Col>
-            <Col md={4} className="center space">
-              <img className="company-logo" src="img/logo/payfactors.png" alt="Payfactors" />
-            </Col>
-            <Col md={4} className="center space">
-              <img className="company-logo" src="img/logo/blue-cross-blue-shield.png" alt="Blue Cross" />
-            </Col>
+            <CompanyLogos />
           </Row>
         </div>
       </Container>

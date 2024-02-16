@@ -3,7 +3,7 @@ import Particles from 'react-particles-js';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card';
+import ApplicationCard from '../components/ApplicationCard.tsx';
 
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
@@ -11,6 +11,22 @@ import Navbar from '../components/Navbar';
 import ParticleJSConfig from '../styles/particlejs_config.json';
 
 export default function apply() {
+
+  const APPLICATIONS_OPEN = false;
+
+  const roles = [
+    {
+      title: 'Software Developer',
+      description: 'Work alongside other developers in a team to design, implement, and review code for a product. Software engineers at BUILD ensure smooth feature integration and deliver exceptional solutions.',
+      applicationLink: 'https://forms.gle/nZR43PcqQNQbgtCg8'
+    },
+    {
+      title: 'Product Manager',
+      description: 'Collaborate closely with clients to optimize their utilization of BUILD\'s services. Effectively convey client requirements to a team of developers. Product Managers at BUILD exhibit strong organizational and communication skills.',
+      applicationLink: 'https://forms.gle/hjPdzXopGWTWJY4m8'
+    }
+  ]
+
   return (
     <div>
       <Particles params={ParticleJSConfig} canvasClassName="particlejs" />
@@ -32,12 +48,7 @@ export default function apply() {
                 <Row>
                   <Col>
                     <p className="pg-heading center">
-                      Joining BUILD is a fantastic way to give back to the
-                      community! You will get the opportunity to work in teams
-                      on a wide array of problems and use concepts they learn in
-                      class in real-world situations. You will also be able to
-                      extend your knowledge by learning more about different
-                      tools and platforms used across the industry.
+                      BUILD is on the lookout for passionate and talented individuals who are eager to make a difference in our community. Are you interested in applying what you have been learning in class to real-world projects in a dynamic team environment? If so, consider applying!
                     </p>
                   </Col>
                 </Row>
@@ -51,83 +62,35 @@ export default function apply() {
         <div className="padding2" id="Roles">
           <Row className="margin-bottom4">
             <Col>
-              <h1>Roles at BUILD</h1>
-              <p>Spring 2024 applications are now open. Please apply by Wednesday, February 7th!</p>
+              <h1>
+                Roles at BUILD
+              </h1>
+              <p>
+                The application window for spring 2024 has closed. Please check back in the fall for more opportunities to join our team.
+              </p>
             </Col>
           </Row>
-          <Row className="center">
-            <Col md={4}>
-              <Card body>
-                <Card.Title className="mb-3"><h4>Software Developer</h4></Card.Title>
-                <Card.Text>
-                  Works closely with a team of developers to make the product vision a reality.
-                  You'll collaborate on code, review team members' work, and translate
-                  client objectives into a usable product. Taking ownership of specific product
-                  features, software engineers ensure smooth feature integration and deliver
-                  exceptional solutions.
-                </Card.Text>
-                <div className="center">
-                  <div
-                    className="apply-btn"
-                    onClick={() => {
-                      window.open('https://forms.gle/nZR43PcqQNQbgtCg8');
-                    }}
-                  >
-                    <div>
-                      <span>Apply</span>
-                      <span>Apply</span>
-                    </div>
+          <Row>
+            { roles.map((role, index) => (
+                <Col key={index}>
+                  <div style={{ height: APPLICATIONS_OPEN ? '250px' : '200px' }}>
+                    <ApplicationCard
+                      title={role.title}
+                      description={role.description}
+                      applicationLink={role.applicationLink}
+                      applicationOpen={APPLICATIONS_OPEN}
+                    />
                   </div>
-                </div>
-              </Card>
-            </Col>
-            <Col md={4} className="mt-4 mt-md-0">
-              <Card body>
-                <Card.Title className="mp-3"><h4>Product Manager</h4></Card.Title>
-                <Card.Text>
-                  Identifies client needs and larger business objectives that a product
-                  or feature will fulfill, articulates what success looks like for the product,
-                  and rallies a team to turn that vision into a reality by working with the
-                  Project Lead to plan and introduce new features, establish timelines, and
-                  manage client relations.
-                  <br />
-                  &nbsp;
-                </Card.Text>
-                <div className="center">
-                  <div
-                    className="apply-btn"
-                    onClick={() => {
-                      window.open('https://forms.gle/hjPdzXopGWTWJY4m8');
-                    }}
-                  >
-                    <div>
-                      <span>Apply</span>
-                      <span>Apply</span>
-                    </div>
-                  </div>
-                </div>
-              </Card>
-            </Col>
-            {/* <Col sm={4}>
-              <Card body className="margin-bottom3">
-                <h5>Designers</h5>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Porta nibh venenatis cras sed felis eget. Vivamus at augue
-                  eget arcu.
-                </p>
-                <div className="center">
-                  <Button className="color">Applications Closed</Button>
-                </div>
-              </Card>
-            </Col> */}
+                </Col>
+            ))}
           </Row>
         </div>
         <div className="margin5">
           <Row className="margin-bottom4">
             <Col>
-              <h1>What we look for</h1>
+              <h1>
+                What we look for
+              </h1>
             </Col>
           </Row>
           <Row className="center margin-bottom5">
@@ -140,7 +103,7 @@ export default function apply() {
                 />
                 <h5>Teamwork</h5>
                 <p className="light">
-                  Do you display the ability to work well in a team?
+                  Are you a team player? Do you work well with others and value a collaborative environment?
                 </p>
               </div>
             </Col>
@@ -153,7 +116,7 @@ export default function apply() {
                 />
                 <h5>Passion</h5>
                 <p className="light">
-                  Do you demonstrate a genuine passion for social good?
+                  Are you passionate about technology and its potential to make a positive impact?
                 </p>
               </div>
             </Col>
@@ -168,8 +131,7 @@ export default function apply() {
                 />
                 <h5>Growth</h5>
                 <p className="light">
-                  Do you push yourself to grow in any setting? Do you seek out
-                  new ways to grow?
+                  Do you challenge yourself and actively explore opportunities for improvement?
                 </p>
               </div>
             </Col>
@@ -205,8 +167,7 @@ export default function apply() {
               <Row>
                 <Col>
                   <p>
-                    We expect developers to put in from 2-4 hours of work a
-                    week. We take it easy during exam weeks.
+                    We expect members to contribute a minimum of 2 hours per week. We take it easy during exam weeks.
                   </p>
                 </Col>
               </Row>
@@ -220,8 +181,7 @@ export default function apply() {
               <Row>
                 <Col>
                   <p>
-                    BUILD is a pro-bono organization and this club is dedicated
-                    to community work.
+                    BUILD provides students with an opportunity to volunteer their time and skills to make a difference by help non-profits in the community, therefore, we are unable to offer monetary compensation.
                   </p>
                 </Col>
               </Row>
@@ -235,8 +195,8 @@ export default function apply() {
               <Row>
                 <Col>
                   <p>
-                    BUILD is open to all years and all majors. We do expect
-                    software developers to have succeeded in CS187.
+                    BUILD is open to all years and majors. We do expect
+                    software developers to be familiar with basic data structures and programming methodologies.
                   </p>
                 </Col>
               </Row>
@@ -250,9 +210,7 @@ export default function apply() {
               <Row>
                 <Col>
                   <p>
-                    We have a general google form to fill out and if you are
-                    accepted for an interview we will be doing a behavioral and
-                    technical interview through Zoom.
+                    After filling out our application form, if selected for an interview, we'll reach out to schedule a single 40 minute virtual interview which will consist of a behavioral and technical portion.
                   </p>
                 </Col>
               </Row>
