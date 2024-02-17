@@ -6,7 +6,12 @@ import { debounce } from 'lodash';
  * @typedef {"xs" | "sm" | "md" | "lg" | "xl" | "xxl"} Breakpoint
  */
 
-export const BREAKPOINTS = {
+/**
+ * @type {Record<Breakpoint, number>}
+ * @description enum for the different breakpoint sizes
+ * @example BreakpointSize.xs === 576
+ */
+export const BreakpointSize = {
   xs: 576,
   sm: 768,
   md: 992,
@@ -16,11 +21,25 @@ export const BREAKPOINTS = {
 };
 
 /**
+ * @type {Record<Breakpoint, string>}
+ * @description enum for the different breakpoints
+ * @example Breakpoint.xs === 'xs'
+ */
+export const Breakpoint = {
+  xs: 'xs',
+  sm: 'sm',
+  md: 'md',
+  lg: 'lg',
+  xl: 'xl',
+  xxl: 'xxl',
+};
+
+/**
  * @param {number} width
  * @returns {Breakpoint}
  */
 const resolveBreakpoint = (width) => {
-  const breakpoints = Object.entries(BREAKPOINTS);
+  const breakpoints = Object.entries(BreakpointSize);
   const [breakpoint] = breakpoints.find(([_, value]) => width < value);
   return breakpoint;
 };
@@ -28,7 +47,7 @@ const resolveBreakpoint = (width) => {
 /**
  * @returns {Breakpoint}
  */
-const useBreakpoint = () => {
+export const useBreakpoint = () => {
   const [size, setSize] = useState(() => resolveBreakpoint(window.innerWidth));
 
   const setBreakpoint = () => {
@@ -43,5 +62,3 @@ const useBreakpoint = () => {
 
   return size;
 };
-
-export default useBreakpoint;

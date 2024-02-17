@@ -10,7 +10,7 @@ import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 
 import { content } from '../content/apply';
-import useBreakpoint from '../hooks/useBreakpoint';
+import { useBreakpoint, Breakpoint } from '../hooks/useBreakpoint';
 
 import ParticleJSConfig from '../styles/particlejs_config.json';
 
@@ -18,7 +18,7 @@ export default function apply() {
 
   const APPLICATIONS_OPEN = false;
   const { roles, lookingFor, faqs } = content;
-  const breakpoint = useBreakpoint();
+  const currBreakpoint = useBreakpoint();
 
   return (
     <div>
@@ -34,9 +34,7 @@ export default function apply() {
                 <Row>
                   <Col>
                     <h1 className="pg-heading center">
-                      Join our amazing team! {
-                        breakpoint
-                      }
+                      Join our amazing team!
                     </h1>
                   </Col>
                 </Row>
@@ -68,14 +66,15 @@ export default function apply() {
           <div
             style={{
               display: 'flex',
-              justifyContent: 'space-between',
+              flexDirection: currBreakpoint === Breakpoint.xs ? 'column' : 'row',
+              gap: currBreakpoint === Breakpoint.xs ? '5px' : '20px',
             }}
           >
             { roles.map((role, index) => (
                 <div
                   style={{
                     minHeight: APPLICATIONS_OPEN ? '250px' : '200px',
-                    width: '48%'
+                    width: currBreakpoint === Breakpoint.xs ? '100%' : '50%',
                   }}
                   key={index}
                 >
