@@ -47,6 +47,7 @@ export default function apply() {
       </div>
       {/* Body */}
       <Container className="mt-5">
+
         <div id="Roles">
           <Row>
             <Col>
@@ -63,33 +64,35 @@ export default function apply() {
             style={{
               display: 'flex',
               flexDirection: currBreakpoint === Breakpoint.xs ? 'column' : 'row',
-              gap: currBreakpoint === Breakpoint.xs ? '5px' : '20px',
+              gap: '20px',
             }}
           >
-            { roles.map((role, index) => (
-                <div
-                  style={{
-                    minHeight: APPLICATIONS_OPEN ? '250px' : '200px',
-                    width: currBreakpoint === Breakpoint.xs ? '100%' : '50%',
-                  }}
-                  key={index}
-                >
-                  <ApplicationCard
-                    title={role.title}
-                    description={role.description}
-                    applicationLink={role.applicationLink}
-                    applicationOpen={APPLICATIONS_OPEN}
-                  />
-                </div>
+            {roles.map((role, index) => (
+              <div
+                style={{
+                  minHeight: '170px',
+                  width: currBreakpoint === Breakpoint.xs ? '100%' : '50%',
+                }}
+                key={index}
+              >
+                <ApplicationCard
+                  title={role.title}
+                  description={role.description}
+                  applicationLink={role.applicationLink}
+                  applicationOpen={APPLICATIONS_OPEN}
+                />
+              </div>
             ))}
           </div>
         </div>
 
         <div className="mt-5">
           <Row>
-            <h1>
-              What We Look For
-            </h1>
+            <Col>
+              <h1>
+                What We Look For
+              </h1>
+            </Col>
           </Row>
 
           <Row
@@ -107,29 +110,31 @@ export default function apply() {
           </Row>
         </div>
 
-        <div className="margin4">
-          <Row className="margin-bottom4">
+        <div className="my-5">
+          <Row>
             <Col>
-              <h1>
+              <h1 className="mb-3">
                 Frequently Asked Questions
               </h1>
             </Col>
           </Row>
-          <div className="left-margin">
-
-            { faqs.map(({ question, answer }, index) => (
-              <div key={index} className="margin-bottom4">
+          <div>
+            { faqs.map(({ question, answer }) => (
+              <Col
+                key={question}
+                className="my-2"
+              >
                 <Row>
                   <h6>
                     {question}
                   </h6>
                 </Row>
                 <Row>
-                  <p>
+                  <p style={{ maxWidth: '900px' }}>
                     {answer}
                   </p>
                 </Row>
-              </div>
+              </Col>
             ))}
           </div>
         </div>

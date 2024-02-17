@@ -2,7 +2,7 @@ export const content = {
   roles: [
     {
       title: 'Software Developer',
-      description: 'Work alongside other developers in a team to design, implement, and review code for a product. Software engineers at BUILD ensure smooth feature integration and deliver exceptional solutions.',
+      description: 'Work alongside other developers in a team to design, implement, and review code for a product. Ensure smooth feature integration and deliver exceptional solutions.',
       applicationLink: 'https://forms.gle/nZR43PcqQNQbgtCg8'
     },
     {
