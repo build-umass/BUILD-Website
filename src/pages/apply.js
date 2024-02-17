@@ -3,29 +3,22 @@ import Particles from 'react-particles-js';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+
 import ApplicationCard from '../components/ApplicationCard.jsx';
 
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
+
+import { content } from '../content/apply';
+import useBreakpoint from '../hooks/useBreakpoint';
 
 import ParticleJSConfig from '../styles/particlejs_config.json';
 
 export default function apply() {
 
   const APPLICATIONS_OPEN = false;
-
-  const roles = [
-    {
-      title: 'Software Developer',
-      description: 'Work alongside other developers in a team to design, implement, and review code for a product. Software engineers at BUILD ensure smooth feature integration and deliver exceptional solutions.',
-      applicationLink: 'https://forms.gle/nZR43PcqQNQbgtCg8'
-    },
-    {
-      title: 'Product Manager',
-      description: 'Collaborate closely with clients to optimize their utilization of BUILD\'s services. Effectively convey client requirements to a team of developers. Product Managers at BUILD exhibit strong organizational and communication skills.',
-      applicationLink: 'https://forms.gle/hjPdzXopGWTWJY4m8'
-    }
-  ]
+  const { roles, lookingFor, faqs } = content;
+  const breakpoint = useBreakpoint();
 
   return (
     <div>
@@ -41,7 +34,9 @@ export default function apply() {
                 <Row>
                   <Col>
                     <h1 className="pg-heading center">
-                      Join our amazing team!
+                      Join our amazing team! {
+                        breakpoint
+                      }
                     </h1>
                   </Col>
                 </Row>
@@ -70,22 +65,33 @@ export default function apply() {
               </p>
             </Col>
           </Row>
-          <Row>
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+            }}
+          >
             { roles.map((role, index) => (
-                <Col key={index}>
-                  <div style={{ height: APPLICATIONS_OPEN ? '250px' : '200px' }}>
-                    <ApplicationCard
-                      title={role.title}
-                      description={role.description}
-                      applicationLink={role.applicationLink}
-                      applicationOpen={APPLICATIONS_OPEN}
-                    />
-                  </div>
-                </Col>
+                <div
+                  style={{
+                    minHeight: APPLICATIONS_OPEN ? '250px' : '200px',
+                    width: '48%'
+                  }}
+                  key={index}
+                >
+                  <ApplicationCard
+                    title={role.title}
+                    description={role.description}
+                    applicationLink={role.applicationLink}
+                    applicationOpen={APPLICATIONS_OPEN}
+                  />
+                </div>
             ))}
-          </Row>
+          </div>
         </div>
+
         <div className="margin5">
+
           <Row className="margin-bottom4">
             <Col>
               <h1>
@@ -93,64 +99,32 @@ export default function apply() {
               </h1>
             </Col>
           </Row>
-          <Row className="center margin-bottom5">
-            <Col md={4} className="margin-lr">
-              <div className="center-horizontal">
-                <img
-                  src="/img/illustrations/teamwork.svg"
-                  className="thumbnail"
-                  alt="Teamwork"
-                />
-                <h5>Teamwork</h5>
-                <p className="light">
-                  Are you a team player? Do you work well with others and value a collaborative environment?
-                </p>
-              </div>
-            </Col>
-            <Col md={4} className="margin-lr">
-              <div className="center-horizontal">
-                <img
-                  src="/img/illustrations/passion.svg"
-                  className="thumbnail"
-                  alt="Passion"
-                />
-                <h5>Passion</h5>
-                <p className="light">
-                  Are you passionate about technology and its potential to make a positive impact?
-                </p>
-              </div>
-            </Col>
-          </Row>
-          <Row className="center margin-bottom4">
-            <Col md={4} className="margin-lr">
-              <div className="center-horizontal">
-                <img
-                  src="/img/illustrations/growth.svg"
-                  className="thumbnail"
-                  alt="Growth"
-                />
-                <h5>Growth</h5>
-                <p className="light">
-                  Do you challenge yourself and actively explore opportunities for improvement?
-                </p>
-              </div>
-            </Col>
-            <Col md={4} className="margin-lr">
-              <div className="center-horizontal">
-                <img
-                  src="/img/illustrations/culture.svg"
-                  className="thumbnail"
-                  alt="Culture"
-                />
-                <h5>Culture</h5>
-                <p className="light">
-                  Do you value empowering non-profits to achieve their missions
-                  through tech?
-                </p>
-              </div>
-            </Col>
+
+          <Row
+            className="center"
+            style={{
+              gap: '40px',
+              marginTop: '50px'
+            }}
+          >
+            { lookingFor.map((weLookFor, index) => (
+                <Col md={4} key={index}>
+                  <div className="center-horizontal">
+                    <img
+                      src={weLookFor.img}
+                      className="thumbnail"
+                      alt={weLookFor.title}
+                    />
+                    <h5>{weLookFor.title}</h5>
+                    <p className="light">
+                      {weLookFor.description}
+                    </p>
+                  </div>
+                </Col>
+            ))}
           </Row>
         </div>
+
         <div className="margin4">
           <Row className="margin-bottom4">
             <Col>
@@ -158,63 +132,25 @@ export default function apply() {
             </Col>
           </Row>
           <div className="left-margin">
-            <div className="margin-bottom4">
-              <Row>
-                <Col>
-                  <h6>How much of a time commitment is BUILD?</h6>
-                </Col>
-              </Row>
-              <Row>
-                <Col>
-                  <p>
-                    We expect members to contribute a minimum of 2 hours per week. We take it easy during exam weeks.
-                  </p>
-                </Col>
-              </Row>
-            </div>
-            <div className="margin-bottom4">
-              <Row>
-                <Col>
-                  <h6>Do we get paid?</h6>
-                </Col>
-              </Row>
-              <Row>
-                <Col>
-                  <p>
-                    BUILD provides students with an opportunity to volunteer their time and skills to make a difference by help non-profits in the community, therefore, we are unable to offer monetary compensation.
-                  </p>
-                </Col>
-              </Row>
-            </div>
-            <div className="margin-bottom4">
-              <Row>
-                <Col>
-                  <h6>How much experience do I need to join?</h6>
-                </Col>
-              </Row>
-              <Row>
-                <Col>
-                  <p>
-                    BUILD is open to all years and majors. We do expect
-                    software developers to be familiar with basic data structures and programming methodologies.
-                  </p>
-                </Col>
-              </Row>
-            </div>
-            <div className="margin-bottom4">
-              <Row>
-                <Col>
-                  <h6>What is the application process like?</h6>
-                </Col>
-              </Row>
-              <Row>
-                <Col>
-                  <p>
-                    After filling out our application form, if selected for an interview, we'll reach out to schedule a single 40 minute virtual interview which will consist of a behavioral and technical portion.
-                  </p>
-                </Col>
-              </Row>
-            </div>
+
+            { faqs.map(({ question, answer }, index) => (
+              <div key={index} className="margin-bottom4">
+                <Row>
+                  <Col>
+                    <h6>
+                      {question}
+                    </h6>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col>
+                    <p>
+                      {answer}
+                    </p>
+                  </Col>
+                </Row>
+              </div>
+            ))}
           </div>
         </div>
       </Container>
