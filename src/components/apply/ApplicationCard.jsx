@@ -1,5 +1,5 @@
 
-export default function ApplicationCard ({
+export default function ApplicationCard({
   title,
   description,
   applicationLink,

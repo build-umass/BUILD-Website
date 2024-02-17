@@ -4,7 +4,8 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import ApplicationCard from '../components/ApplicationCard.jsx';
+import ApplicationCard from '../components/apply/ApplicationCard.jsx';
+import LookForCard from '../components/apply/LookForCard.jsx';
 
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
@@ -96,24 +97,12 @@ export default function apply() {
             style={{ gap: '40px' }}
           >
             { lookingFor.map((weLookFor, index) => (
-                <Col
-                  md={4}
-                  key={index}
-                >
-                  <div className="center-horizontal">
-                    <img
-                      src={weLookFor.img}
-                      className="thumbnail"
-                      alt={weLookFor.title}
-                    />
-                    <h5>
-                      {weLookFor.title}
-                    </h5>
-                    <p className="light">
-                      {weLookFor.description}
-                    </p>
-                  </div>
-                </Col>
+              <LookForCard
+                title={weLookFor.title}
+                description={weLookFor.description}
+                imgSrc={weLookFor.img}
+                key={index}
+              />
             ))}
           </Row>
         </div>
@@ -121,7 +110,9 @@ export default function apply() {
         <div className="margin4">
           <Row className="margin-bottom4">
             <Col>
-              <h1>Frequently Asked Questions</h1>
+              <h1>
+                Frequently Asked Questions
+              </h1>
             </Col>
           </Row>
           <div className="left-margin">
