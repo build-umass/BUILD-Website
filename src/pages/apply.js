@@ -21,20 +21,23 @@ export default function apply() {
   const { roles, lookingFor, faqs } = content;
   const currBreakpoint = useBreakpoint();
 
+  const navBarHeightPx = 80;
+  const jumbotronHeightPx = 500;
+
   return (
     <div>
       <Particles
         params={ParticleJSConfig}
-        canvasClassName="particlejs"
+        style={{ position: 'absolute', maxHeight: `${jumbotronHeightPx + navBarHeightPx}px` }}
       />
       {/* Jumbotron */}
       <div className="bg-gradient">
         {/* Navbar */}
         <Navbar />
-        <Container className="pg-jumbotron center">
+        <div className="center" style={{ height: `${jumbotronHeightPx}px` }}>
           <div
             className="center"
-            style={{ flexDirection: 'column'}}
+            style={{ flexDirection: 'column', maxWidth: '800px' }}
           >
             <h1 className="pg-heading">
               Join Our Amazing Team!
@@ -43,7 +46,7 @@ export default function apply() {
               BUILD is on the lookout for passionate and talented individuals who are eager to make a difference in our community. Are you interested in applying what you have been learning in class to real-world projects in a dynamic team environment? If so, consider applying!
             </p>
           </div>
-        </Container>
+        </div>
       </div>
       {/* Body */}
       <Container className="mt-5">
