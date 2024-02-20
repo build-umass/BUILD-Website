@@ -48,6 +48,12 @@ const resolveBreakpoint = (width) => {
  * @returns {Breakpoint}
  */
 export const useBreakpoint = () => {
+
+  // for server side rendering
+  if (typeof window === 'undefined') {
+    return Breakpoint.xxl;
+  }
+
   const [size, setSize] = useState(() => resolveBreakpoint(window.innerWidth));
 
   const setBreakpoint = () => {
