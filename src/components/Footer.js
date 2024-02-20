@@ -72,7 +72,6 @@ export default function Footer() {
               </Link>
               <Link href="/about#Mission">Mission</Link>
               <Link href="/about#Story">Story</Link>
-              <Link href="/about#Team">Team</Link>
             </div>
           </Col>
           <Col md={3} sm={12} className="footer-col">
