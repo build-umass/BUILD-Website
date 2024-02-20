@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { debounce } from 'lodash';
 
@@ -55,10 +54,7 @@ export const useBreakpoint = () => {
   }
 
   const [size, setSize] = useState(() => resolveBreakpoint(window.innerWidth));
-
-  const setBreakpoint = () => {
-    setSize(resolveBreakpoint(window.innerWidth));
-  };
+  const setBreakpoint = () => setSize(resolveBreakpoint(window.innerWidth));
 
   useEffect(() => {
     const calcInnerWidth = debounce(setBreakpoint, 200);

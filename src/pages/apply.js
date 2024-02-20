@@ -36,7 +36,7 @@ export default function apply() {
         <Navbar />
         <div className="center" style={{ height: `${jumbotronHeightPx}px` }}>
           <div
-            className="center"
+            className="center p-4"
             style={{ flexDirection: 'column', maxWidth: '800px' }}
           >
             <h1 className="pg-heading">
