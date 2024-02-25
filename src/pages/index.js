@@ -25,8 +25,6 @@ export default function Index() {
   return (
     <div>
       <div className="sq-bg">
-        {/* Navbar */}
-        <Navbar />
         {/* Landing Jumbotron */}
         <Container className="pg-jumbotron center">
           <Row className="padding1">
