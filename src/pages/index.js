@@ -212,7 +212,7 @@ export default function Index() {
                   </Row>
                   <Row>
                     <Col>
-                      <p className="stats-number">10+</p>
+                      <p className="stats-number">30+</p>
                     </Col>
                   </Row>
                   <Row>
@@ -231,7 +231,7 @@ export default function Index() {
                   </Row>
                   <Row>
                     <Col>
-                      <p className="stats-number">10,000+</p>
+                      <p className="stats-number">100,000+</p>
                     </Col>
                   </Row>
                   <Row>

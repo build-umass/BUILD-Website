@@ -6,8 +6,6 @@ import Col from 'react-bootstrap/Col';
 
 import ApplicationCard from '../components/apply/ApplicationCard.jsx';
 import LookForCard from '../components/apply/LookForCard.jsx';
-
-import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 
 import { content } from '../content/apply';
@@ -28,12 +26,10 @@ export default function apply() {
     <div>
       <Particles
         params={ParticleJSConfig}
-        style={{ position: 'absolute', maxHeight: `${jumbotronHeightPx + navBarHeightPx}px` }}
+        style={{ position: 'absolute', maxHeight: `${jumbotronHeightPx}px` }}
       />
       {/* Jumbotron */}
       <div className="bg-gradient">
-        {/* Navbar */}
-        <Navbar />
         <div className="center" style={{ height: `${jumbotronHeightPx}px` }}>
           <div
             className="center p-4"
@@ -142,7 +138,6 @@ export default function apply() {
           </div>
         </div>
       </Container>
-      <Footer />
     </div>
   );
 }

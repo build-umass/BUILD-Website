@@ -5,15 +5,10 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
-import Footer from '../components/Footer';
-import Navbar from '../components/Navbar';
-
 export default function services() {
   return (
     <div>
-      <div className="bg-gradient">
-        {/* Navbar */}
-        <Navbar />
+      <div style={{ paddingTop: '70px', paddingBottom: '70px' }} className="bg-gradient">
         {/* Landing Jumbotron */}
         <Container className="center">
           <Row className="py-5 align-items-center">
@@ -288,8 +283,6 @@ export default function services() {
           </div>
         </div>
       </Container>
-      {/* Footer */}
-      <Footer />
     </div>
   );
 }

@@ -1,13 +1,22 @@
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
-import Footer from '../components/Footer';
-import Navbar from '../components/Navbar';
 
 export default function JumbotronHeader({ title, subtitle, actions }) {
   return (
-    <Container className="center">
+    <div
+      style={{
+        height: '500px',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center'
+      }}
+    >
+      <div
+        style={{
+          maxWidth: '800px',
+          width: '90%'
+        }}
+      >
       <Row>
         <Col>
           <Row>
@@ -31,6 +40,7 @@ export default function JumbotronHeader({ title, subtitle, actions }) {
           </Row>
         </Col>
       </Row>
-    </Container>
+      </div>
+    </div>
   );
 }

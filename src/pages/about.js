@@ -5,7 +5,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 import JumbotronHeader from '../components/JumbotronHeader.jsx';
 
@@ -14,12 +13,13 @@ const about = () => {
   const title = "Gain Real-World Experience By Helping Others";
   const subtitle = "BUILD provides a venue for students to gain academic and practical knowledge about software development, web development, and tech consulting. We are BUILDING our community through the pro-bono services we offer to nonprofits, startups, and local businesses.";
 
+  const YEARS_SINCE_BUILDS_INCEPTION = new Date().getFullYear() - 2019;
+
   return (
     <div>
       <div className="about-bg">
         <div className="bg-gradient-transparent">
           {/* Navbar */}
-          <Navbar />
           <JumbotronHeader
             title={title}
             subtitle={subtitle}
@@ -29,7 +29,7 @@ const about = () => {
                   variant="light"
                   className="link-btn"
                 >
-                  Join Us!
+                  Join Us
                 </Button>
               </Link>
             }
@@ -41,7 +41,9 @@ const about = () => {
         <div className="margin3" id="Mission">
           <Row>
             <Col>
-              <h1>Mission</h1>
+              <h1>
+                Mission
+              </h1>
             </Col>
           </Row>
           <Row>
@@ -58,7 +60,7 @@ const about = () => {
                 skills.
 
                 {/* after */}
-                We are on a mission to leverage technology for the social good. By pairing passionate and driven UMass students with charities and non-profit organizations, we not only engineer software that does good, but foster and grow the talent of the next generation of computer scientists dedicated to leaving a positive impact on the world.
+                We are on a mission to leverage technology for the social good. By pairing passionate and driven UMass students with charities and non-profit organizations, we not only engineer software that does good, but foster the talents of the next generation of computer scientists dedicated to making the world a better place.
               </p>
             </Col>
           </Row>
@@ -82,13 +84,12 @@ const about = () => {
                 real-world experience.
 
                 {/* after */}
-                10 years ago, a group of UMass students had an idea. They wanted to use their skills to help the community. They wanted to make a difference. They wanted to BUILD. And so, BUILD UMass was born. It started out modestly, a couple of students working out of the basement of McNamara, but it quickly grew as potential turned into reality. Today, BUILD UMass is a thriving community of students, engineers, and non-profits, all working together to make the world a better place.
+                {YEARS_SINCE_BUILDS_INCEPTION} years ago CS students Nilay Sadavarte and Matt Pearce had an idea. They wanted to use their skills to help the community. They wanted to make a difference. They wanted to BUILD. And so, BUILD UMass was born. Since its inception, BUILD has made a positive impact on dozens of non-profits, charities, and student groups, while helping hundreds of students gain real-world experience in software development, product management, and consulting. We are proud of our accomplishments, but we are always looking to do more. If you are an organization that could benefit from the services we provide we would love to hear from you. If you are a student looking to gain real-world experience, we would love for you to be a part of the next chapter of this story.
               </p>
             </Col>
           </Row>
         </div>
       </Container>
-      <Footer />
     </div>
   );
 };
