@@ -17,9 +17,6 @@ import {
   faCode,
 } from '@fortawesome/free-solid-svg-icons';
 
-import Footer from '../components/Footer';
-import Navbar from '../components/Navbar';
-
 // Render
 export default function Index() {
   return (
@@ -295,7 +292,6 @@ export default function Index() {
           </Row>
         </div>
       </Container>
-      <Footer />
     </div>
   );
 }

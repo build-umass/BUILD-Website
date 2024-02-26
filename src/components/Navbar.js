@@ -17,42 +17,41 @@ export default function Index() {
   ]
 
   return (
-    <Container>
+    <Container style={{ position: 'relative' }}>
       <Navbar
         style={{
           position: 'absolute',
+          display: 'flex',
+          justifyContent: 'space-between',
+          width: '100%',
         }}
-        bg="transparent"
-        expand="lg"
       >
-        <Container>
-          <Navbar.Brand href="/">
-            BUILD UMass
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse
-            id="basic-navbar-nav custom-toggler"
-            className="justify-content-end"
-          >
-            <Nav style={{ marginLeft: '300px' }}>
-              {
-                pages.map((page) => (
-                  <Nav.Item
-                    key={page.name}
+        <Navbar.Brand href="/">
+          BUILD UMass
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse
+          id="basic-navbar-nav custom-toggler"
+          className="justify-content-end"
+        >
+          <Nav>
+            {
+              pages.map((page) => (
+                <Nav.Item
+                  key={page.name}
+                  href={page.link}
+                >
+                  <Link
                     href={page.link}
+                    target={page.target}
                   >
-                    <Link
-                      href={page.link}
-                      target={page.target}
-                    >
-                      {page.name}
-                    </Link>
-                  </Nav.Item>
-                ))
-              }
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
+                    {page.name}
+                  </Link>
+                </Nav.Item>
+              ))
+            }
+          </Nav>
+        </Navbar.Collapse>
       </Navbar>
     </Container>
   );

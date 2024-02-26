@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -8,7 +8,13 @@ import Button from 'react-bootstrap/Button';
 export default function services() {
   return (
     <div>
-      <div style={{ paddingTop: '70px', paddingBottom: '70px' }} className="bg-gradient">
+      <div
+        style={{
+          paddingTop: '70px',
+          paddingBottom: '70px'
+        }}
+        className="bg-gradient"
+      >
         {/* Landing Jumbotron */}
         <Container className="center">
           <Row className="py-5 align-items-center">
