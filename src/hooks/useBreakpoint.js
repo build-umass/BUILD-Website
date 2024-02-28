@@ -2,8 +2,16 @@ import { useState, useEffect } from 'react';
 import { debounce } from 'lodash';
 
 /**
+ * @usage
+ * import { useBreakpoint } from '@hooks/useBreakpoint';
+ * const { xs, sm, md, lg, xl, xxl } = useBreakpoint();
+ * style={{ width: xs ? '100%' : '50%' }}
+ * xs is a reactively changing boolean that evaluates to true if the current breakpoint is xs
+*/
+
+/**
  * @typedef {"xs" | "sm" | "md" | "lg" | "xl" | "xxl"} Breakpoint
- */
+*/
 
 /**
  * @type {Record<Breakpoint, number>}
@@ -62,5 +70,10 @@ export const useBreakpoint = () => {
     return () => window.removeEventListener('resize', calcInnerWidth);
   }, []);
 
-  return size;
+  return new Proxy(Breakpoint, {
+    get(target, prop) {
+      if (!(prop in target)) throw new Error(`Invalid breakpoint: ${prop}`);
+      return prop === size;
+    },
+  });
 };

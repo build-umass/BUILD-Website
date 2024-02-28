@@ -6,10 +6,9 @@ import Col from 'react-bootstrap/Col';
 
 import ApplicationCard from '../components/apply/ApplicationCard.jsx';
 import LookForCard from '../components/apply/LookForCard.jsx';
-import Navbar from '../components/Navbar';
 
 import { content } from '../content/apply';
-import { useBreakpoint, Breakpoint } from '../hooks/useBreakpoint';
+import { useBreakpoint } from '../hooks/useBreakpoint';
 
 import ParticleJSConfig from '../styles/particlejs_config.json';
 
@@ -17,9 +16,8 @@ export default function apply() {
 
   const APPLICATIONS_OPEN = false;
   const { roles, lookingFor, faqs } = content;
-  const currBreakpoint = useBreakpoint();
+  const { xs } = useBreakpoint();
 
-  const navBarHeightPx = 80;
   const jumbotronHeightPx = 500;
 
   return (
@@ -28,6 +26,7 @@ export default function apply() {
         params={ParticleJSConfig}
         style={{ position: 'absolute', maxHeight: `${jumbotronHeightPx}px` }}
       />
+
       {/* Jumbotron */}
       <div className="bg-gradient">
         <div className="center" style={{ height: `${jumbotronHeightPx}px` }}>
@@ -44,6 +43,7 @@ export default function apply() {
           </div>
         </div>
       </div>
+
       {/* Body */}
       <Container className="mt-5">
 
@@ -62,7 +62,7 @@ export default function apply() {
             className="my-3"
             style={{
               display: 'flex',
-              flexDirection: currBreakpoint === Breakpoint.xs ? 'column' : 'row',
+              flexDirection: xs ? 'column' : 'row',
               gap: '20px',
             }}
           >
@@ -70,7 +70,7 @@ export default function apply() {
               <div
                 style={{
                   minHeight: '170px',
-                  width: currBreakpoint === Breakpoint.xs ? '100%' : '50%',
+                  width: xs ? '100%' : '50%',
                 }}
                 key={index}
               >
