@@ -7,32 +7,35 @@ import NavbarMenu from './NavbarMenu';
 export default function NavbarSm({ pages }) {
 	const [show, setShow] = useState(false);
 
-	const toggleShow = () => setShow(!show);
+	const close = () => setShow(false);
+	const open = () => setShow(true)
 
   return (
-    <Navbar
-			style={{
-				width: '100%',
-				display: 'flex',
-				justifyContent: 'space-between',
-			}}
-		>
-			<Navbar.Brand href="/">
-				BUILD UMass
-			</Navbar.Brand>
+		<>
+			<Navbar
+				style={{
+					width: '100%',
+					display: 'flex',
+					justifyContent: 'space-between',
+				}}
+			>
+				<Navbar.Brand href="/">
+					BUILD UMass
+				</Navbar.Brand>
 
-			<FontAwesomeIcon
-				icon={faBars}
-				onClick={toggleShow}
-				color="white"
-				size="xl"
-			/>
+				<FontAwesomeIcon
+					icon={faBars}
+					onClick={open}
+					color="white"
+					size="xl"
+				/>
+			</Navbar>
 
 			<NavbarMenu
 				show={show}
 				pages={pages}
-				toggleShow={toggleShow}
+				close={close}
 			/>
-		</Navbar>
+		</>
   );
 }

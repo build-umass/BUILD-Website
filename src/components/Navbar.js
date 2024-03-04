@@ -19,16 +19,19 @@ export default function Navbar() {
   ]
 
   return (
-    <Container style={{ position: 'relative' }}>
-      <div
-        style={{
-          position: 'absolute',
-          zIndex: 100,
-          width: '100%',
-        }}
-      >
-        {smAndDown ? <NavbarSm pages={pages} /> : <NavbarLg pages={pages} />}
-      </div>
-    </Container>
+    <div
+      style={{
+        position: 'absolute',
+        zIndex: 100,
+        width: '100%',
+      }}
+    >
+      {smAndDown ?
+        <NavbarSm pages={pages} /> :
+        <Container>
+          <NavbarLg pages={pages} />
+        </Container>
+      }
+    </div>
   );
 }
