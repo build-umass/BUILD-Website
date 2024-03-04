@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default function NavbarLink({ page }) {
+export default function NavbarLink({ page, linkDisplay }) {
   const isExternal = page.link.startsWith('http');
 
   return (
@@ -10,11 +10,11 @@ export default function NavbarLink({ page }) {
         target="_blank"
         rel="noreferrer noopener"
       >
-        {page.name}
+        {linkDisplay || page.name}
       </a>) : (
       <Link href={page.link}>
         <a>
-          {page.name}
+          {linkDisplay || page.name}
         </a>
       </Link>
     )
