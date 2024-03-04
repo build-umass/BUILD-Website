@@ -17,7 +17,6 @@ export default function apply() {
   const APPLICATIONS_OPEN = false;
   const { roles, lookingFor, faqs } = content;
   const { xs } = useBreakpoint();
-
   const jumbotronHeightPx = 500;
 
   return (

@@ -4,13 +4,17 @@ import { debounce } from 'lodash';
 /**
  * @usage
  * import { useBreakpoint } from '@hooks/useBreakpoint';
- * const { xs, sm, md, lg, xl, xxl } = useBreakpoint();
+ * const { xs, sm, md, lg, xl, xxl, smAndUp, lgAndDown } = useBreakpoint();
  * style={{ width: xs ? '100%' : '50%' }}
  * xs is a reactively changing boolean that evaluates to true if the current breakpoint is xs
 */
 
 /**
- * @typedef {"xs" | "sm" | "md" | "lg" | "xl" | "xxl"} Breakpoint
+ * @typedef {"smAndDown" | "smAndUp" | "mdAndDown" | "mdAndUp" | "lgAndDown" | "lgAndUp"} BreakpointHelper
+*/
+
+/**
+ * @typedef {"xs" | "sm" | "md" | "lg" | "xl" | "xxl" | BreakpointHelper} Breakpoint
 */
 
 /**
@@ -52,10 +56,10 @@ export const Breakpoint = {
 };
 
 /**
- * @type {Record<Breakpoint, Breakpoint => boolean>}
+ * @type {Record<BreakpointHelper, Breakpoint => boolean>}
  * @description maps helper props to their respective predicates
  */
-export const helperProps = {
+export const breakpointHelpers = {
   smAndDown: (size) => size === Breakpoint.xs || size === Breakpoint.sm,
   smAndUp: (size) => size !== Breakpoint.xs,
   mdAndDown: (size) => size === Breakpoint.xs || size === Breakpoint.sm || size === Breakpoint.md,
@@ -96,7 +100,7 @@ export const useBreakpoint = () => {
   return new Proxy(Breakpoint, {
     get(target, prop) {
       if (!(prop in target)) throw new Error(`Invalid breakpoint: ${prop}`);
-      return (prop in helperProps) ? helperProps[prop](size) : size === prop;
+      return (prop in breakpointHelpers) ? breakpointHelpers[prop](size) : size === prop;
     },
   });
 };
