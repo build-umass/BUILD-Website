@@ -37,7 +37,7 @@ export default function apply() {
               Join Our Amazing Team!
             </h1>
             <p className="pg-heading">
-              BUILD is on the lookout for passionate and talented individuals who are eager to make a difference in our community. Are you interested in applying what you have been learning in class to real-world projects in a dynamic team environment? If so, consider applying!
+              BUILD is on the lookout for passionate and talented individuals who are eager to make a difference in our community. Are you interested in putting what you have been learning in class to use in real-world projects? If so, consider applying!
             </p>
           </div>
         </div>

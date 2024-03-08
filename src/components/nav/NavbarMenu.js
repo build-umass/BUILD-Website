@@ -1,4 +1,4 @@
-import { useOuterClick } from '../hooks/useOuterClick';
+import { useOuterClick } from '../../hooks/useOuterClick';
 import NavbarLink from './NavbarLink';
 import { useEffect, useState } from 'react';
 import NavbarMenuItem from './NavbarMenuItem';

@@ -83,7 +83,7 @@ const resolveBreakpoint = (width) => {
  */
 export const useBreakpoint = () => {
 
-  // for server side rendering
+  // for ssr
   if (typeof window === 'undefined') {
     return Breakpoint.xxl;
   }

@@ -1,4 +1,3 @@
-// Imports
 import React from 'react';
 import Link from 'next/link';
 
@@ -50,7 +49,6 @@ export default function Index() {
                       className="link-btn"
                       variant="light"
                       onClick={() => {
-                        // window.open('/contact', '_self');
                         window.open(
                           'https://forms.gle/uuA2s98v4oC4o8TU7',
                           '_blank'
