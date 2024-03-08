@@ -1,3 +1,5 @@
+export const contactFormLink = 'https://forms.gle/uuA2s98v4oC4o8TU7';
+
 export const content = {
   pages: [
     {
@@ -32,7 +34,7 @@ export const content = {
     {
       name: 'Contact',
       longName: 'Contact Us',
-      link: 'https://forms.gle/uuA2s98v4oC4o8TU7',
+      link: contactFormLink,
       description: 'Get in touch with us.',
     },
   ]
