@@ -8,10 +8,14 @@ import Button from 'react-bootstrap/Button';
 import JumbotronHeader from '../components/JumbotronHeader.jsx';
 import { contactFormLink } from '../content/nav.js';
 
-const about = () => {
+export default function about() {
 
   const title = "Gain Real-World Experience By Helping Others";
+
   const subtitle = "BUILD provides a venue for students to gain academic and practical knowledge about software development, web development, and tech consulting. We are BUILDING our community through the pro-bono services we offer to nonprofits, startups, and local businesses.";
+
+  const nilayLinkedIn = "https://www.linkedin.com/in/nilay18/";
+  const mattLinkedIn = "https://www.linkedin.com/in/matthewpearce/";
 
   const YEARS_SINCE_BUILDS_INCEPTION = new Date().getFullYear() - 2019;
 
@@ -70,7 +74,7 @@ const about = () => {
           <Row>
             <Col>
               <p>
-                {YEARS_SINCE_BUILDS_INCEPTION} years ago CS students <a href="https://www.linkedin.com/in/nilay18/" target="_blank">Nilay Sadavarte</a> and <a href="https://www.linkedin.com/in/matthewpearce/" target="_blank">Matt Pearce</a> had an idea. They wanted to use their skills to help the community. They wanted to make a difference. They wanted to BUILD. And so, BUILD UMass was born. Since its inception, BUILD has had an impact on dozens of non-profits, charities, and student groups, while helping hundreds of students gain real-world experience in software development, product management, and consulting. We are proud of our accomplishments, but we are always looking to do more. If you are an organization that could benefit from the services we provide, we would love to <a href={contactFormLink} target="_blank">hear from you</a>. If you are a student looking to gain real-world experience, we would love for you to be a part of the next chapter of our story.
+                {YEARS_SINCE_BUILDS_INCEPTION} years ago CS students <a href={nilayLinkedIn} target="_blank">Nilay Sadavarte</a> and <a href={mattLinkedIn} target="_blank">Matt Pearce</a> had an idea. They wanted to use their skills to help the community. They wanted to make a difference. They wanted to BUILD. And so, BUILD UMass was born. Since its inception, BUILD has had an impact on dozens of non-profits, charities, and student groups, while helping hundreds of students gain real-world experience in software development, product management, and consulting. We are proud of our accomplishments, but we are always looking to do more. If you are an organization that could benefit from the services we provide, we would love to <a href={contactFormLink} target="_blank">hear from you</a>. If you are a student looking to gain real-world experience, we would love for you to be a part of the next chapter of our story.
               </p>
             </Col>
           </Row>
@@ -79,5 +83,3 @@ const about = () => {
     </div>
   );
 };
-
-export default about;

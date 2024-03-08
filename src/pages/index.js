@@ -6,6 +6,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import CompanyLogos from '../components/CompanyLogos';
+import { contactFormLink } from '../content/nav';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -50,7 +51,7 @@ export default function Index() {
                       variant="light"
                       onClick={() => {
                         window.open(
-                          'https://forms.gle/uuA2s98v4oC4o8TU7',
+                          contactFormLink,
                           '_blank'
                         );
                       }}
