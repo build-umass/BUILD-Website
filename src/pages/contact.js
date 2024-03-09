@@ -6,16 +6,10 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Form from 'react-bootstrap/Form';
-import Footer from '../components/Footer';
-import Navbar from '../components/Navbar';
 
 export default function contact() {
   return (
     <div>
-      <div className="bg-gradient">
-        {/* Navbar */}
-        <Navbar />
-      </div>
       <Container className="padding3">
         <Row>
           <Col>
@@ -97,7 +91,6 @@ export default function contact() {
           </Col>
         </Row>
       </Container>
-      <Footer />
     </div>
   );
 }
