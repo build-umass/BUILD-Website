@@ -11,6 +11,7 @@ import {
   faLinkedin,
   faGithub,
 } from '@fortawesome/free-brands-svg-icons';
+import { contactFormLink } from '../content/nav';
 
 export default function Footer() {
   return (
@@ -93,7 +94,7 @@ export default function Footer() {
               <Link
                 // Todo: Connect with Cheerio
                 // href="/contact"
-                href="https://forms.gle/uuA2s98v4oC4o8TU7"
+                href={contactFormLink}
                 target="_blank"
               >
                 Contact

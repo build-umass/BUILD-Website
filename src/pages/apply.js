@@ -7,11 +7,8 @@ import Col from 'react-bootstrap/Col';
 import ApplicationCard from '../components/apply/ApplicationCard.jsx';
 import LookForCard from '../components/apply/LookForCard.jsx';
 
-import Footer from '../components/Footer';
-import Navbar from '../components/Navbar';
-
 import { content } from '../content/apply';
-import { useBreakpoint, Breakpoint } from '../hooks/useBreakpoint';
+import { useBreakpoint } from '../hooks/useBreakpoint';
 
 import ParticleJSConfig from '../styles/particlejs_config.json';
 
@@ -19,21 +16,18 @@ export default function apply() {
 
   const APPLICATIONS_OPEN = false;
   const { roles, lookingFor, faqs } = content;
-  const currBreakpoint = useBreakpoint();
-
-  const navBarHeightPx = 80;
+  const { xs } = useBreakpoint();
   const jumbotronHeightPx = 500;
 
   return (
     <div>
       <Particles
         params={ParticleJSConfig}
-        style={{ position: 'absolute', maxHeight: `${jumbotronHeightPx + navBarHeightPx}px` }}
+        style={{ position: 'absolute', maxHeight: `${jumbotronHeightPx}px` }}
       />
+
       {/* Jumbotron */}
       <div className="bg-gradient">
-        {/* Navbar */}
-        <Navbar />
         <div className="center" style={{ height: `${jumbotronHeightPx}px` }}>
           <div
             className="center p-4"
@@ -43,11 +37,12 @@ export default function apply() {
               Join Our Amazing Team!
             </h1>
             <p className="pg-heading">
-              BUILD is on the lookout for passionate and talented individuals who are eager to make a difference in our community. Are you interested in applying what you have been learning in class to real-world projects in a dynamic team environment? If so, consider applying!
+              BUILD is on the lookout for passionate and talented individuals who are eager to make a difference in our community. Are you interested in putting what you have been learning in class to use in real-world projects? If so, consider applying!
             </p>
           </div>
         </div>
       </div>
+
       {/* Body */}
       <Container className="mt-5">
 
@@ -66,7 +61,7 @@ export default function apply() {
             className="my-3"
             style={{
               display: 'flex',
-              flexDirection: currBreakpoint === Breakpoint.xs ? 'column' : 'row',
+              flexDirection: xs ? 'column' : 'row',
               gap: '20px',
             }}
           >
@@ -74,7 +69,7 @@ export default function apply() {
               <div
                 style={{
                   minHeight: '170px',
-                  width: currBreakpoint === Breakpoint.xs ? '100%' : '50%',
+                  width: xs ? '100%' : '50%',
                 }}
                 key={index}
               >
@@ -142,7 +137,6 @@ export default function apply() {
           </div>
         </div>
       </Container>
-      <Footer />
     </div>
   );
 }

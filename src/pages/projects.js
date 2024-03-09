@@ -4,8 +4,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-import Footer from '../components/Footer';
-import Navbar from '../components/Navbar';
 
 import ProjectCard from '../components/ProjectCard';
 import projectDatabase from '../public/data/projects.json';
@@ -15,7 +13,6 @@ export default function projects() {
     <div>
       {/* Jumbotron */}
       <div className="bg-gradient">
-        <Navbar />
         <Container className="pg-jumbotron center">
           <Row className="padding1">
             <Col>
@@ -30,11 +27,11 @@ export default function projects() {
                 <Row>
                   <Col>
                     <p className="pg-heading center">
-                      Explore the innovative projects our student teams 
-                      have completed in the past three years with BUILD. 
-                      From cutting-edge software development to web design, 
-                      we have partnered with nonprofits, startups, and local businesses 
-                      to make a positive impact on our society. 
+                      Explore the innovative projects our student teams
+                      have completed in the past three years with BUILD.
+                      From cutting-edge software development to web design,
+                      we have partnered with nonprofits, startups, and local businesses
+                      to make a positive impact on our society.
                       Please enjoy your time here!
                     </p>
                   </Col>
@@ -72,7 +69,6 @@ export default function projects() {
           ))
         }
       </Container>
-      <Footer />
     </div>
   )
 }

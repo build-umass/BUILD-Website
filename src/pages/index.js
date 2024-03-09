@@ -1,4 +1,3 @@
-// Imports
 import React from 'react';
 import Link from 'next/link';
 
@@ -7,6 +6,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import CompanyLogos from '../components/CompanyLogos';
+import { contactFormLink } from '../content/nav';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -17,16 +17,11 @@ import {
   faCode,
 } from '@fortawesome/free-solid-svg-icons';
 
-import Footer from '../components/Footer';
-import Navbar from '../components/Navbar';
-
 // Render
 export default function Index() {
   return (
     <div>
       <div className="sq-bg">
-        {/* Navbar */}
-        <Navbar />
         {/* Landing Jumbotron */}
         <Container className="pg-jumbotron center">
           <Row className="padding1">
@@ -55,9 +50,8 @@ export default function Index() {
                       className="link-btn"
                       variant="light"
                       onClick={() => {
-                        // window.open('/contact', '_self');
                         window.open(
-                          'https://forms.gle/uuA2s98v4oC4o8TU7',
+                          contactFormLink,
                           '_blank'
                         );
                       }}
@@ -214,7 +208,7 @@ export default function Index() {
                   </Row>
                   <Row>
                     <Col>
-                      <p className="stats-number">10+</p>
+                      <p className="stats-number">30+</p>
                     </Col>
                   </Row>
                   <Row>
@@ -233,7 +227,7 @@ export default function Index() {
                   </Row>
                   <Row>
                     <Col>
-                      <p className="stats-number">10,000+</p>
+                      <p className="stats-number">100,000+</p>
                     </Col>
                   </Row>
                   <Row>
@@ -297,7 +291,6 @@ export default function Index() {
           </Row>
         </div>
       </Container>
-      <Footer />
     </div>
   );
 }

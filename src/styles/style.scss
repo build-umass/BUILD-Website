@@ -1,3 +1,4 @@
+
 // Imports
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 
@@ -9,7 +10,7 @@ $primary-color-darker: #a30000;
 $primary-color-focus: #c8210446;
 $base-color: #000000;
 $muted-color: #696969;
-$red-gradient: linear-gradient(to right, #a30000, #f44708);
+$red-gradient: linear-gradient(to right, #a30000, #ba2610);
 $light-red-gradient: linear-gradient(to right, #c82104, #f44708);
 $red-gradient-transparent: linear-gradient(to right, rgba(163, 0, 0, 0.75), rgba(244, 71, 8, 0.75));
 
@@ -577,7 +578,8 @@ a {
 }
 
 .pg-jumbotron {
-	min-height: 50vh;
+	height: 70vh;
+  max-height: 550px;
 }
 
 .diagonal {

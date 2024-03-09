@@ -1,19 +1,20 @@
-import React from 'react';
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-
-import Footer from '../components/Footer';
-import Navbar from '../components/Navbar';
+import { contactFormLink } from '../content/nav';
 
 export default function services() {
   return (
     <div>
-      <div className="bg-gradient">
-        {/* Navbar */}
-        <Navbar />
+      <div
+        style={{
+          paddingTop: '70px',
+          paddingBottom: '70px'
+        }}
+        className="bg-gradient"
+      >
         {/* Landing Jumbotron */}
         <Container className="center">
           <Row className="py-5 align-items-center">
@@ -44,9 +45,8 @@ export default function services() {
                       variant="light"
                       className="link-btn"
                       onClick={() => {
-                        // window.open('/contact', '_self');
                         window.open(
-                          'https://forms.gle/uuA2s98v4oC4o8TU7',
+                          contactFormLink,
                           '_blank'
                         );
                       }}
@@ -83,7 +83,10 @@ export default function services() {
         {/* Types */}
         <Container>
           {/* Software Development */}
-          <div className="margin3" id="Software">
+          <div
+            className="margin3"
+            id="Software"
+          >
             <Row>
               <Col className="center-vertical">
                 <div className="center">
@@ -206,7 +209,7 @@ export default function services() {
                     <Col>
                       <p className="pg-heading center">
                         Get in touch with us anyway and we’ll try our best to
-                        accomodate any of your requests!
+                        accommodate any of your requests!
                       </p>
                     </Col>
                   </Row>
@@ -216,9 +219,8 @@ export default function services() {
                         variant="light"
                         className="link-btn"
                         onClick={() => {
-                          // window.open('/contact', '_self');
                           window.open(
-                            'https://forms.gle/uuA2s98v4oC4o8TU7',
+                            contactFormLink,
                             '_blank'
                           );
                         }}
@@ -288,8 +290,6 @@ export default function services() {
           </div>
         </div>
       </Container>
-      {/* Footer */}
-      <Footer />
     </div>
   );
 }
