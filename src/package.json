@@ -15,7 +15,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.12.1",
     "@fortawesome/react-fontawesome": "^0.1.9",
     "bootstrap": "^4.4.1",
-    "firebase-tools": "^7.15.1",
+    "firebase-tools": "^13.6.0",
     "jquery": "^3.4.0",
     "next": "9.3.2",
     "popper.js": "^1.16.0",
