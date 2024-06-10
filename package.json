@@ -26,7 +26,7 @@
   "homepage": "https://github.com/build-umass/BUILD-Website#readme",
   "dependencies": {
     "firebase": "^8.9.1",
-    "firebase-tools": "^8.9.2"
+    "firebase-tools": "^13.11.2"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
