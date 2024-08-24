@@ -3,12 +3,12 @@ export const content = {
     {
       title: 'Software Developer',
       description: 'Work alongside other developers in a team to design, implement, and review code for a product. Ensure smooth feature integration and deliver exceptional solutions.',
-      applicationLink: 'https://forms.gle/nZR43PcqQNQbgtCg8'
+      applicationLink: 'https://forms.gle/TVg2a4Bj9GrW2vRs9'
     },
     {
       title: 'Product Manager',
       description: 'Collaborate closely with clients to optimize their utilization of BUILD\'s services. Effectively convey client requirements to a team of developers.',
-      applicationLink: 'https://forms.gle/hjPdzXopGWTWJY4m8'
+      applicationLink: 'https://forms.gle/7vqive7mPPwaLLnX7'
     }
   ],
   lookingFor: [

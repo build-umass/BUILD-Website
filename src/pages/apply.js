@@ -14,7 +14,7 @@ import ParticleJSConfig from '../styles/particlejs_config.json';
 
 export default function apply() {
 
-  const APPLICATIONS_OPEN = false;
+  const APPLICATIONS_OPEN = true;
   const { roles, lookingFor, faqs } = content;
   const { xs } = useBreakpoint();
   const jumbotronHeightPx = 500;
@@ -53,7 +53,7 @@ export default function apply() {
                 Roles at BUILD
               </h1>
               <p>
-                The application window for spring 2024 has closed. Please check back in the fall for more opportunities to join our team.
+                Applications for Fall 2024 are now open! Apply by 11:59PM on September 10.
               </p>
             </Col>
           </Row>
