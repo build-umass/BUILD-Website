@@ -18,7 +18,26 @@
           "Shreyansh Misra"
         ],
         "description": "Disaster response coordination app for medical responders.",
-        "image_url": "/img/projects/kapop_S24.png"
+        "image_url": "/img/projects/kapok_S24.png"
+      },
+      {
+        "title": "kapok",
+        "project_lead": "Eric Wu",
+        "sdes": [
+          "Emmet Hamell", 
+          "Kevin Li", 
+          "Shobhit Mehrotra", 
+          "Suryam Gupta", 
+          "Bhargavi Patil", 
+          "Adhiraj Chadha", 
+          "Yona Voss-Andreae"
+        ],
+        "product_managers":[
+          "Khushi Rajoria", 
+          "Shreyansh Misra"
+        ],
+        "description": "Disaster response coordination app for medical responders.",
+        "image_url": "/img/projects/kapok_S24.png"
       }
     ]
   },
