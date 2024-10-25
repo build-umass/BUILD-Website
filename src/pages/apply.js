@@ -52,9 +52,6 @@ export default function apply() {
               <h1>
                 Roles at BUILD
               </h1>
-              <p>
-                Applications for Fall 2024 are now open! Apply by 11:59PM on September 10.
-              </p>
             </Col>
           </Row>
           <div
