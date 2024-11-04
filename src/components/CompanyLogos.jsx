@@ -22,6 +22,14 @@ export default function CompanyLogos() {
       src: 'msft.svg',
     },
     {
+      name: 'Nasdaq',
+      src: 'nasdaq.png'
+    },
+    {
+      name: 'Credit Karma',
+      src: 'credit-karma.png'
+    },
+    {
       name: 'Uber',
       src: 'uber.svg',
     },
