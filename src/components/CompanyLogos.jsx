@@ -73,6 +73,14 @@ export default function CompanyLogos() {
       name: 'Blue Cross Blue Shield',
       src: 'blue-cross-blue-shield.png',
     },
+    {
+      name: 'Crico',
+      src: 'crico.png'
+    },
+    {
+      name: 'Genentech',
+      src: 'genentech.svg'
+    }
   ];
 
   return (
