@@ -6,24 +6,28 @@ export default function CompanyLogos() {
 
   const logos = [
     {
-      name: 'Microsoft',
-      src: 'msft.svg',
-    },
-    {
-      name: 'Meta',
-      src: 'meta.png',
+      name: 'Amazon',
+      src: 'Amazon_logo.svg',
     },
     {
       name: 'Google',
       src: 'google.svg',
     },
     {
-      name: 'Amazon',
-      src: 'Amazon_logo.svg',
+      name: 'Meta',
+      src: 'meta.png',
+    },
+    {
+      name: 'Microsoft',
+      src: 'msft.svg',
     },
     {
       name: 'Uber',
       src: 'uber.svg',
+    },
+    {
+      name: 'Dell',
+      src: 'dell.png',
     },
     {
       name: 'Cisco',
@@ -38,20 +42,16 @@ export default function CompanyLogos() {
       src: 'mastercard.svg',
     },
     {
-      name: 'Tanium',
-      src: 'tanium.png',
-    },
-    {
       name: 'Fidelity',
       src: 'fidelity.svg',
     },
     {
-      name: 'Pratt and Whitney',
-      src: 'pratt-whitney.svg',
+      name: 'Tanium',
+      src: 'tanium.png',
     },
     {
-      name: 'Dell',
-      src: 'dell.png',
+      name: 'Pratt and Whitney',
+      src: 'pratt-whitney.svg',
     },
     {
       name: 'MassMutual',
@@ -73,16 +73,25 @@ export default function CompanyLogos() {
       justifyContent: "center",
       alignItems: "center",
       flexWrap: "wrap",
-      gap: "100px"
+      gap: "40px",
+      paddingTop: "20px"
     }}>
       {logos.map((logo, index) => {
         return (
-          <img key={index} src={logoPath + logo.src} alt={logo.name} style={{
-            width: "300px",
-            height: "150px",
-            objectFit: "contain",
-          }} />
-        )
+                <img 
+                    key={index} 
+                    src={logoPath + logo.src} 
+                    alt={logo.name} 
+                    style={{
+                        width: "250px",
+                        height: "150px",
+                        padding: "40px",
+                        objectFit: "contain",
+                        boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.3)",
+                        borderRadius: "8px"
+                    }} 
+                />
+            );
       })}
     </div>
   );
