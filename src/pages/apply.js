@@ -47,6 +47,7 @@ export default function apply() {
       <Container className="mt-5">
 
         <div id="Roles">
+        <p>Fall applications have concluded, but make sure to check back in February 2025 for the next application opportunity!</p>
           <Row>
             <Col>
               <h1>

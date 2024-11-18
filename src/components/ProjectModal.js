@@ -42,6 +42,13 @@ export default function ProjectModal({ show, onHide, projectData }) {
                       <span>{projectData.product_managers.join(', ')}</span>
                     </div>
                 }
+                {
+                  projectData.project_url !== "" &&
+                    <div>
+                      <span className="project-members-title">Project Link: </span>
+                      <a href = {projectData.project_url} target = "_blank" rel = "noopener noreferrer">{projectData.project_url}</a>
+                    </div>
+                }
               </section>
           }
           {/* Description - New line per sentence */}
