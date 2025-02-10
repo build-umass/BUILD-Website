@@ -37,7 +37,10 @@ export default function apply() {
               Join Our Amazing Team!
             </h1>
             <p className="pg-heading">
-              BUILD is on the lookout for passionate and talented individuals who are eager to make a difference in our community. Are you interested in putting what you have been learning in class to use in real-world projects? If so, consider applying!
+              BUILD is on the lookout for passionate and talented individuals who 
+              are eager to make a difference in our community. Are you interested 
+              in putting what you have been learning in class to use in real-world projects? 
+              If so, consider applying!
             </p>
           </div>
         </div>
@@ -47,7 +50,8 @@ export default function apply() {
       <Container className="mt-5">
 
         <div id="Roles">
-        <p>Fall applications have concluded, but make sure to check back in February 2025 for the next application opportunity!</p>
+        <p>Spring applications have concluded, but make sure to check back in Semptember 2025 
+          for the next application opportunity!</p>
           <Row>
             <Col>
               <h1>
