@@ -12,7 +12,9 @@ export default function about() {
   const title = 'Gain Real-World Experience By Helping Others';
 
   const subtitle =
-    'BUILD provides a venue for students to gain academic and practical knowledge about software development, web development, and tech consulting. We are BUILDING our community through the pro-bono services we offer to nonprofits, startups, and local businesses.';
+    `BUILD provides a venue for students to gain academic and practical knowledge about
+     software development, web development, and tech consulting. We are BUILDING our community
+      through the pro-bono services we offer to nonprofits, startups, and local businesses.`;
 
   const nilayLinkedIn = 'https://www.linkedin.com/in/nilay18/';
   const mattLinkedIn = 'https://www.linkedin.com/in/matthewpearce/';
