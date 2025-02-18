@@ -57,21 +57,6 @@ export default function about() {
           </Row>
         </div>
 
-        <div className="py-5" id="LeadershipTeam">
-          <Row>
-            <Col>
-              <h1>Current Leadership Team</h1>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <p>
-                TBD once we get photos.
-              </p>
-            </Col>
-          </Row>
-        </div>
-
         <div className="pb-5" id="Story">
           <Row>
             <Col>
