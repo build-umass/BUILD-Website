@@ -5,7 +5,7 @@ This is the GitHub repository for the official BUILD UMass Website. It contains 
 ## Links
 
 - Live- [buildumass.com](buildumass.com)
-- Dev- [build-website-test.herokuapp.com](https://build-website-test.herokuapp.com/)
+- (deprecated) Dev- [build-website-test.herokuapp.com](https://build-website-test.herokuapp.com/)
 
 ## Quick Start
 
