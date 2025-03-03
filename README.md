@@ -16,6 +16,10 @@ This is the GitHub repository for the official BUILD UMass Website. It contains 
 | Build             | `yarn build`        | Builds the website into static content                    |
 | Firebase Emulator | `yarn serve`        | Starts running the website locally on a firebase emulator |
 
+## Applications (IMPORTANT)
+
+In src/pages/apply.js, there's a constant named APPLICATIONS_OPEN. As of right now, we gotta remember to just manually change it to true and false based on if the applications are open or not
+
 ## Note
 
 Deployments of the live and dev version of the website are done automatically from the `master` and `dev` branches respectively. To add features or make edits, create a new branch based on `dev` and once you're done working merge it into `dev`. Once a significant amount of changes have been made, `dev` will be merged into `master`. Please avoid making changes to `master` directly.
