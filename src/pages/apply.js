@@ -14,7 +14,7 @@ import ParticleJSConfig from '../styles/particlejs_config.json';
 
 export default function apply() {
 
-  const APPLICATIONS_OPEN = true;
+  const APPLICATIONS_OPEN = false;
   const { roles, lookingFor, faqs } = content;
   const { xs } = useBreakpoint();
   const jumbotronHeightPx = 500;
@@ -47,11 +47,44 @@ export default function apply() {
       </div>
 
       {/* Body */}
+      
       <Container className="mt-5">
-
         <div id="Roles">
-        <p>Spring applications have concluded, but make sure to check back in Semptember 2025 
+        { !APPLICATIONS_OPEN && (
+        <>
+        <Row>
+          <Col>
+            <h1>
+              Application Openings
+            </h1>
+          </Col>
+        </Row>
+        <div style = {{
+          border: '1px solid #e0e0e0',
+          borderRadius: '10px',
+          paddingTop: '2rem',
+          paddingRight: '2rem',
+          paddingLeft: '2rem',
+          marginBottom: '2rem',
+          marginTop: '1rem',
+        }}>
+        <p style={{textAlign: "center"}}> The latest application period has closed, but make sure to check back early next semester 
           for the next application opportunity!</p>
+          <div className="center">
+            <div
+              onClick={() => window.open('http://eepurl.com/i_fS4k', '_blank')}
+              className="apply-btn"
+              style = {{marginBottom: "1.5rem", marginTop: "0rem", width: "50%"}}
+            >
+              <div>
+                <span>Notify me</span>
+                <span>Notify me</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        </>
+        )}
           <Row>
             <Col>
               <h1>
