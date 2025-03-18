@@ -86,20 +86,19 @@ export default function Footer() {
             </div>
           </Col>
           <Col md={3} sm={12} className="footer-col">
-            <div>
-              <Link href="/apply">
+          <div>
+            <Link href="/apply">
+              <a>
                 <p className="footer-heading">Get Involved</p>
-              </Link>
-              <Link href="/apply#Roles">Positions</Link>
-              <Link
-                // Todo: Connect with Cheerio
-                // href="/contact"
-                href={contactFormLink}
-                target="_blank"
-              >
-                Contact
-              </Link>
-            </div>
+              </a>
+            </Link>
+            <Link href="/apply#Roles">
+              <a>Positions</a>
+            </Link>
+            <Link href={contactFormLink}>
+              <a target="_blank">Contact</a>
+            </Link>
+          </div>
           </Col>
         </Row>
       </Container>

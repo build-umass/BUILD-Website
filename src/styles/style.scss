@@ -561,7 +561,7 @@ a {
 // Home Page
 
 .sq-bg {
-	background: url("../public/img/square-pattern.svg");
+	background: url("/img/square-pattern.svg");
 	background-size: 100%;
 
 	@media (max-width: 992px) {
@@ -660,7 +660,7 @@ a {
 // About Page
 
 .about-bg {
-	background: url("../public/img/group-pic-2024.png");
+	background: url("/img/group-pic-2024.png");
 	background-size: cover;
 	background-position: 50% 70%;
 }
@@ -697,6 +697,11 @@ a {
 	top: 40px;
 	margin-top: 40px;
 	margin-left: 10%;
+	height: 0px; // To not add too much spacing
+	width: 100px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
 
 	@media (max-width: 1920px) {
 		margin-left: 5%;
@@ -705,13 +710,6 @@ a {
 	@media (max-width: 1556px) {
 		display: none;
 	}
-
-	height: 0px; // To not add too much spacing
-	width: 100px;
-
-	display: flex;
-	flex-direction: column;
-	gap: 12px;
 
 	.year-title {
 		margin-bottom: 0;
