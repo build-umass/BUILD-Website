@@ -1,5 +1,5 @@
 /* eslint-disable */
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/style.scss';
 import Footer from '../components/Footer';
 import Navbar from '../components/nav/Navbar';

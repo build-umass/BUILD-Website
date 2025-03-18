@@ -6,7 +6,7 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
 import ProjectCard from '../components/ProjectCard';
-import projectDatabase from '../public/data/projects.json';
+import projectDatabase from '../data/projects.json';
 
 export default function projects() {
   return (
