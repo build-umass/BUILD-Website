@@ -27,7 +27,7 @@ export default function Footer() {
               </Row>
               <Row className="margin-bottom2">
                 <Col>
-                  <p className="copyright">© 2024 BUILD UMass</p>
+                  <p className="copyright">© 2025 BUILD UMass</p>
                 </Col>
               </Row>
               <Row className="footer-col">
