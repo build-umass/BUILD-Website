@@ -335,6 +335,13 @@ a {
 			text-decoration: underline;
 		}
 	}
+
+	.footer-icons {
+		padding-left: 10px;
+		display: flex;
+		justify-content: left;
+		align-items: center;
+	}
 }
 
 @media (max-width: 576px) {
@@ -342,9 +349,15 @@ a {
 		gap: 20px;
 		.footer-col {
 			display: flex;
-			align-items: center;
+			align-items: right;
 			justify-content: center;
 			text-align: center;
+		}
+
+		.footer-icons {
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 	}
 }

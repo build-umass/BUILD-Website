@@ -30,15 +30,15 @@ export default function Footer() {
                   <p className="copyright">© 2025 BUILD UMass</p>
                 </Col>
               </Row>
-              <Row className="footer-col">
-                <a
+              <Row className="footer-icons">
+                {/* <a
                   href="https://www.facebook.com/BUILD-UMass-567327120439466/"
                   target="_blank"
                   className="white-link"
                   rel="noreferrer"
                 >
                   <FontAwesomeIcon icon={faFacebook} className="icon" />
-                </a>
+                </a> */}
                 <a
                   href="https://www.instagram.com/build.umass/"
                   target="_blank"
