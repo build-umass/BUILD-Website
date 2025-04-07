@@ -14,6 +14,7 @@ $red-gradient: linear-gradient(to right, #a30000, #ba2610);
 $light-red-gradient: linear-gradient(to right, #c82104, #f44708);
 $red-gradient-transparent: linear-gradient(to right, rgba(163, 0, 0, 0.75), rgba(244, 71, 8, 0.75));
 
+
 html {
 	scroll-behavior: smooth;
 	scroll-padding-top: 10%;
@@ -828,3 +829,25 @@ a {
 		padding-top: 1rem;
 	}
 }
+
+.projects-jumbotron {
+	background-color: $primary-color; // Or use rgba($primary-color, 0.9)
+	opacity: 1;
+	background-image:
+	  radial-gradient(
+		circle at center center,
+		rgba($primary-color, 0.8),
+		rgba($primary-color-darker, 0.8)
+	  ),
+	  repeating-radial-gradient(
+		circle at center center,
+		rgba($primary-color, 0.8),
+		rgba($primary-color, 0.8) 40px,
+		transparent 80px,
+		transparent 40px
+	  );
+	background-blend-mode: multiply;
+  
+}
+
+  
