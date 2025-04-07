@@ -10,9 +10,9 @@ import projectDatabase from '../data/projects.json';
 
 export default function projects() {
   return (
-    <div>
+    <div> 
       {/* Jumbotron */}
-      <div className="bg-gradient">
+      <div className="projects-jumbotron">
         <Container className="pg-jumbotron center">
           <Row className="padding1">
             <Col>
