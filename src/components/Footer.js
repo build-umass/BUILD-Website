@@ -2,6 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+
 // import Link from 'react-bootstrap/NavLink';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -86,19 +87,19 @@ export default function Footer() {
             </div>
           </Col>
           <Col md={3} sm={12} className="footer-col">
-          <div>
-            <Link href="/apply">
-              <a>
-                <p className="footer-heading">Get Involved</p>
-              </a>
-            </Link>
-            <Link href="/apply#Roles">
-              <a>Positions</a>
-            </Link>
-            <Link href={contactFormLink}>
-              <a target="_blank">Contact</a>
-            </Link>
-          </div>
+            <div>
+              <Link href="/apply">
+                <a>
+                  <p className="footer-heading">Get Involved</p>
+                </a>
+              </Link>
+              <Link href="/apply#Roles">
+                <a>Positions</a>
+              </Link>
+              <Link href={contactFormLink}>
+                <a target="_blank">Contact</a>
+              </Link>
+            </div>
           </Col>
         </Row>
       </Container>
